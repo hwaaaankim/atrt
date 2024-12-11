@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('웹사이트유지/보수')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/maintenance-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/maintenance-03.jpg"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+
+				</div>
+				<!-- <div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div> -->
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>어트렉션의 장점</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-screen"></i>다양한 웹사이트 플랫폼 관리 가능<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-magic"></i>합리적
+												가격의 유지보수<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i class="icon-star3"></i>디자인
+												수정 및 상품관리 서비스 가능<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>웹사이트, 어느곳이여도 OK!</h3>
+											<span>Any website doesn't matter.</span>
+										</div>
+										<div class="fslider alignleft" data-arrows="false"
+											style="width: 250px;">
+											<div class="flexslider">
+												<div class="slider-wrap">
+													<div class="slide">
+														<img src="/resource/front/image/cafe24.jpg" alt="Slider 1">
+													</div>
+													<div class="slide">
+														<img src="/resource/front/image/gabia.jpg" alt="Slider 2">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>카페 24, 가비아 등 각종 다양한 사이트에서 사용하는 도메인에 상관없이 고객님의 요청에 따른
+											관리가 이루어집니다. 아시다시피 어트렉션은 무조건 1:1 상담 및 맞춤 관리 서비스 체계로 불가능한 범위를
+											최대한 제하고 도움을 드릴 수 있게 노력하고있습니다.</p>
+										<p>
+											대행사, 자사몰, 랜딩페이지 등. 뭐든지 ok!<br>필요한 서비스가 있다면 바로 상담 받아보세요.
+										</p>
+										<img src="/resource/front/image/detail/pro-platform.jpg">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>지속적인 양질의 홈페이지 관리를 위한 선택</h3>
+											<span>Choice for continuous quality home page
+												management</span>
+										</div>
+										<p>
+											전문가의 매니지먼트로 더욱 체계적인 홈페이지 유지 및 관리가 가능합니다.<br> 가격면에서도 필요하신
+											관리서비스만 초이스하여 합리적인 운영이 가능하고 기능의 추가 유무도 손쉽게 요청하실 수 있어요.
+										</p>
+										<p>홈페이지를 더욱 효율적으로 운영하기 위한 선택, 어트렉션과 함깨 해보세요!</p>
+										<img src="/resource/front/image/detail/pro-price02.jpg">
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>자유로운 디자인 수정과 반영, 번거로운 상품관리까지.</h3>
+											<span>Free design modification, reflection, and
+												cumbersome product management.</span>
+										</div>
+										<p>
+											어트렉션 고객이라면 무조건 만족하시는 디자인 서비스, 전문 웹디자이너의 손길을 거쳐 원하시는 디자인대로 뚝딱!<br>수정과
+											반영도 관리하시는동안은 자유롭게 요청하실 수 있어요. <br>또한 인력이 부족하여 상세한 관리를
+											요하는 상품관리 및 상세페이지까지 연계하여 더욱 효과적인 홈페이지 운영을 도와드린답니다. 필요한 모든 관리
+											서비스가 있는 어트렉션만의 특별한 매니지먼트 서비스 체계를 직접 경험해보세요!
+										</p>
+										<img src="/resource/front/image/detail/pro-design02.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

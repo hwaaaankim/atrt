@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Bowlby+One&family=Do+Hyeon&family=Hahmlet:wght@200;300;400;500;600;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sunflower:wght@300;500;700&display=swap');
+.btn-wrap{
+	position:fixed;
+	bottom:6%;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:999;
+	display:flex;
+	justify-content:space-between;
+	width:20%;
+	margin:auto;
+}
+
+.btn{
+	border:none;
+	background:white;
+	font-size:14px;
+	width:100%;
+	margin-right:2px;
+	height:30px;
+	border-radius:5px;
+	box-shadow:0px 15px 15px rgba(0,0,0,0.6);
+	font-family: 'Noto Sans KR', sans-serif;
+	cursor:pointer;
+	font-weight:500;
+	color:white;
+	transition:all 0.3s ease-in-out;
+}
+@media(max-width:760px){
+	.btn-wrap{
+		bottom:10%;
+		left:50%;
+		transform:translateX(-50%);
+		z-index:999;
+		display:flex;
+		justify-content:space-between;
+		width:80%;
+		margin:auto;
+	}
+	.btn{
+		border:none;
+		background:white;
+		font-size:12px;
+		width:100%;
+		margin-right:2px;
+		height:30px;
+		border-radius:5px;
+		box-shadow:0px 15px 15px rgba(0,0,0,0.6);
+		font-family: 'Noto Sans KR', sans-serif;
+		cursor:pointer;
+		font-weight:400;
+		color:white;
+		transition:all 0.3s ease-in-out;
+	}
+}
+.telBtn{
+	background:#004600;
+}
+.telBtn:hover{
+	background:#002800;
+}
+.kakaoBtn{
+	background:#dda206;
+}
+.kakaoBtn:hover{
+	background:#a67904;
+}
+.insertBtn{
+	background:#000080;
+}
+.insertBtn:hover{
+	background:#000055;
+}
+.homeBtn{
+	background:gray;
+}
+.homeBtn:hover{
+	background:rgba(25,25,25);
+	
+}

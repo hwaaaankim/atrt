@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('문의하기')">
+
+</head>
+
+<body class="stretched">
+	<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/inquiry-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/inquiry.png"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+
+				</div>
+				<div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div>
+
+				<div class="section m-0 border-top-0 bg-con bg-white">
+					<div class="container clearfix">
+						<div class="row gutter-40 col-mb-80">
+							<div class="postcontent col-lg-9">
+
+								<h3>문의사항을 남겨주세요.</h3>
+								<div>
+									<form class="mb-0" action="/client/insert" method="post">
+										<div class="row">
+											<div class="col-md-4 form-group">
+												<label for="name">성함/업체명 <small>*</small></label>
+												<input type="text" required="required" id="name" name="name" class="sm-form-control" placeholder="성함 또는 업체명을 입력 해 주세요." />
+												<input type="hidden" name="sort" value="false">
+											</div>
+
+											<div class="col-md-4 form-group">
+												<label for="email">이메일주소</label>
+												<input type="text" id="email" name="email" class="sm-form-control"  placeholder="이메일을 입력 해 주세요."/>
+											</div>
+
+											<div class="col-md-4 form-group">
+												<label for="phone">연락처<small>*</small></label> 
+												<input type="text" oninput="autoHyphen(this)" maxlength="13" placeholder="연락처를 입력 해 주세요." required="required" id="phone" name="phone" class="sm-form-control" />
+											</div>
+
+											<div class="w-100"></div>
+											
+											<div class="col-md-6 form-group">
+												<label for="subject">문의주제<small>*</small></label>
+												<select required="required" class="sm-form-control" id="subject" name="subject">
+													<option value="">-- 선택해주세요 --</option>
+													<option value="insta">인스타그램(SNS)마케팅 문의</option>
+													<option value="website">웹사이트/프로그램 개발 문의</option>
+													<option value="keyword">키워드 검색마케팅 문의</option>
+													<option value="design">디자인 문의</option>
+												</select>
+											</div>
+											<div class="col-md-6 form-group">
+												<label for="detail">상세사항 </label>
+												<input type="text" id="detail" name="detail" class="sm-form-control"  placeholder="문의 주제를 작성 해 주세요."/>
+											</div>
+
+											<div class="w-100"></div>
+
+											<div class="col-12 form-group">
+												<label for="content">문의상세사항</label>
+												<textarea class="sm-form-control" name="content" id="content" rows="6" cols="30" placeholder="마케터에게 남기실 말씀을 입력 해 주세요."></textarea>
+											</div>
+
+											<div class="col-12 form-group">
+												<input class="button button-3d m-0" type="submit" value="문의하기">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="sidebar col-lg-3">
+
+								<address class="contact-text">
+									<strong>서울오피스 : </strong><br> 서울시 강남구 강남대로 310, <br>유니온센터<br><br>
+									<strong>도쿄오피스 : </strong><br> 東京都新宿区西新宿３－３－１３ <br>西新宿水間ビル６階<br>
+								</address>
+								<abbr title="Phone Number"><strong>Phone : </strong></abbr>1833-5180<br> 
+								<abbr title="Email Address"><strong>Email : </strong></abbr>contact@atrt.co.kr 
+
+								<div class="widget border-0 pt-0">
+
+									<a href="https://www.facebook.com/profile.php?id=100083366855589" class="social-icon si-small si-dark si-facebook">
+										<i class="icon-facebook"></i> <i class="icon-facebook"></i>
+									</a>
+									<a href="https://www.instagram.com/coolsta_marketing" class="social-icon si-small si-dark si-instagram">
+										<i class="icon-instagram"></i> <i class="icon-instagram"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+	<script type="text/javascript" src="/resource/front/js/validate.js"></script>
+	<script th:inline="javascript">
+		var code = /*[[${CODE}]]*/ 'default';
+
+		if(code === 'SUCCESS'){
+			alert('문의가 접수 되었습니다. 빠르게 답변 드리도록 하겠습니다.');
+			location.href='/community/inquiry';
+		}else if (code === 'FAIL'){
+			alert('에러가 발생하였습니다. 다시 신청 해 주세요.');
+			location.href='/community/inquiry';
+		}
+	</script>
+</body>
+
+</html>

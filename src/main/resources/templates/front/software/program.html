@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('프로그램개발')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/program-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/program-02.png"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div> -->
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>Attract Point</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-screen"></i>필요성에 맞는 맞춤형 프로그램 개발<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-magic"></i>전문인력
+												매칭 서비스<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i class="icon-star3"></i>유지보수
+												관리 서비스<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>프로그램? 뭐든지 가능해!</h3>
+											<span>Program? Anything is possible!</span>
+										</div>
+										<p>
+											당신이 필요한 모든 프로그램 ok!<br> 매크로, 특정 작업 프로그램, 필요한 모든 기능이라면.
+										</p>
+										<p>
+											자세한 상담을 통해 당신에게 딱 맞는 맞춤형 프로그램을 만들어드려요! 필요한 기능이라면 Just talk to
+											me!<br>가능한 범위로 합리적인 가격에 제작해드립니다.
+										</p>
+										<img src="/resource/front/image/detail/pro-nec.jpg">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>전문인력 1:1 담당 서비스</h3>
+											<span>In Attraction, it's definitely 1:1!</span>
+										</div>
+										<p>우리 어트렉션에선 모든 서비스, 상담, 진행과정까지 전부 담당자가 정해져 오직 고객님만을 위해
+											1:1로 진행해드린답니다!</p>
+										<p>직접적인 대화 및 컨펌을 통해 원하는 방향의 결과물이 탄생하게 되며 디자인, 구성까지 전부 직접
+											보시면서 진행하기때문에 수정사항도 편히 이야기 하실 수 있습니다. 또한 전문가의 컨설팅으로 고객님이 원하시는
+											결과에서 더욱 디벨롭될 수도 있답니다.</p>
+
+										<img src="/resource/front/image/detail/pro-ex.jpg">
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>애프터 케어 서비스까지.</h3>
+											<span>A/S is a given!</span>
+										</div>
+										<p>프로그램만 만들고 끝? 아니죠! 어트렉션은 다릅니다.</p>
+										<p>
+											애프터케어 서비스까지 완벽하게. 떄에 따라 필요한 수정사항과 피드백을 반영해드리며<br>기술적으로
+											하자를 발견시 무조건 a/s를 보장해드려요! 걱정없는 이후의 관리시스템, 믿고 사용할 수 있는 어트렉션입니다.
+										</p>
+										<img src="/resource/front/image/detail/pro-as02.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

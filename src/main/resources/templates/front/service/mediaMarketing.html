@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('언론홍보')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/mediaMarketing-m.jpg">
+							<img data-animate="fadeIn" src="/resource/front/image/new04/220228press.jpg"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+
+				</div>
+				<!-- <div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div> -->
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>어트렉션의 장점</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-screen"></i>홍보기사<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-magic"></i>카드뉴스
+												기사 <i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i class="icon-star3"></i>영상홍보기사<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content4"><i class="icon-gift"></i>배너<i
+												class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>공신력이 필요할때</h3>
+											<span>When public confidence is needed</span>
+										</div>
+
+										<p>가장 기본적인 언론홍보 방법으로 형식에 맞춰 작성한 보도기사 내용을 언론사 매체를 통해 송출하여
+											검색 포털 키워드 검색 시 노출되는 언론홍보 광고입니다. 신제품 출시/이벤트 내용을 알리기에 적합한 광고
+											방법입니다.</p>
+										<img src="/resource/front/image/detail/media-01.jpg">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>눈에 확실히 보여지는 내용</h3>
+											<span>A story that is clearly understood story</span>
+										</div>
+										<p>주요 이슈나 홍보하고자 하는 내용을 이미지와 간략한 텍스트로 재구성해 보여주는 뉴스 포맷으로
+											순차적으로 넘겨 볼 수 있어 모바일 및 소셜 네트워크(SNS) 환경에서 일반 기사뉴스보다 가독성 및 전파력이
+											높고 확산성이 뛰어나 언론홍보 중에서도 가장 효과적인 광고 방법입니다.</p>
+										<img src="/resource/front/image/detail/media-02.jpg">
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>짧은시간동안 제품을 기억시키고싶다면</h3>
+											<span>If you want to remember the product for a short
+												time.</span>
+										</div>
+										<p>일반 보도기사와 함께 유튜브 영상 등을 함께 송출함으로써 홍보하고자 하는 브랜드/제품/기업 등을
+											부각 시킬 수 있는 영상 강조형 언론홍보 광고입니다.</p>
+										<img src="/resource/front/image/detail/media-03.jpg">
+									</div>
+
+									<div id="snav-content4">
+										<div class="heading-block">
+											<h3>가성비 좋은 노출도</h3>
+											<span>Cost effective exposure</span>
+										</div>
+										<p>일반 보도기사 등 정해진 규격의 배너를 삽입하여 고객의 유입을 기대할 수 있는 언론홍보 광고입니다.
+											언론홍보 광고 중 저렴한 비용으로 많은 소비자에게 홍보하는 것에 특화된 온라인 마케팅 상품입니다.</p>
+										<img src="/resource/front/image/detail/media-04.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M4XBW5BV');</script>
+	<!-- End Google Tag Manager -->
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>어트랙션</title>
+	<meta name="title" content="일본마케팅의 모든것, 어트렉션">
+	<meta name="description" content="일본마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+	<meta name="author" content="ATTRACTION" />
+	<link rel="stylesheet" href="/resource/japan/css/style.css">
+	<link rel="stylesheet" href="/resource/japan/css/swiper-bundle.min.css">
+	<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<script src="/resource/japan/js/jquery-3.7.1.min.js"></script>
+	<script src="/resource/japan/js/swiper-bundle.min.js"></script>
+	<script src="/resource/japan/js/main.js"></script>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://atrt.co.kr/japan">
+	<meta property="og:title" content="마케팅의 모든것, 어트렉션">
+	<meta property="og:image" content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://atrt.co.kr/japan">
+	<meta property="twitter:title" content="마케팅의 모든것, 어트렉션">
+	<meta property="twitter:image" content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+	<link rel="shortcut icon" href="/resource/front/image/logo.ico">
+	<script src="https://kit.fontawesome.com/e5334cc6a1.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+	$(document).ready(function () {
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1.4,
+			spaceBetween: 15,
+			loop: true,
+			scrollbar: {
+				el: ".swiper-scrollbar"
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1.4,
+					spaceBetween: 15,
+				},
+				760: {
+					slidesPerView: 2.2,
+					spaceBetween: 15,
+				},
+				960: {
+					slidesPerView: 2.8,
+					spaceBetween: 30,
+				},
+				1200: {
+					slidesPerView: 2.2,
+					spaceBetween: 30,
+				},
+				1600: {
+					slidesPerView: 2.8,
+					spaceBetween: 30,
+				},
+			},
+		});
+
+		var swiper = new Swiper(".mySwiper2", {
+			slidesPerView: 1,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	});
+
+</script>
+<style>
+	.fixed-buttons {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		z-index: 1000;
+		transition: all 0.5s ease;
+		/* 위치 변경 시 부드러운 전환 효과 */
+	}
+
+	.fixed-buttons a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 5px;
+		text-decoration: none;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		transition: background-color 0.3s, transform 0.3s, opacity 0.5s ease;
+		/* 모든 상태에 대한 전환 효과 */
+		font-size: 20px;
+		/* 아이콘 크기 */
+	}
+
+	#callButton {
+		background-color: #28a745;
+		/* 초록색 배경 */
+		color: white;
+		/* 흰색 아이콘 */
+	}
+
+	#callButton:hover {
+		background-color: #218838;
+		transform: scale(1.1);
+	}
+
+	#callButton:active {
+		background-color: #1e7e34;
+		transform: scale(1);
+	}
+
+	#scrollTop {
+		background-color: white;
+		/* 하얀색 배경 */
+		color: black;
+		/* 검정색 아이콘 */
+		opacity: 0;
+		pointer-events: none;
+		transition: background-color 0.3s, transform 0.3s, opacity 0.5s ease;
+		/* 모든 상태에 대한 전환 효과 */
+	}
+
+	#scrollTop.visible {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	#scrollTop:hover {
+		background-color: #f1f1f1;
+		transform: scale(1.1);
+	}
+
+	#scrollTop:active {
+		background-color: #e1e1e1;
+		transform: scale(1);
+	}
+</style>
+
+<body>
+	<section id="main">
+		<article class="cnt1">
+			<div class="txt">
+				<h1 class="logo"><a href=""><img src="/resource/japan/images/hd_logo.png" alt="ATTRACTION"></a></h1>
+				<h2>일본 마케팅, <br>‘<strong>국내</strong>’에만 멈춰계시겠습니까?</h2>
+				<p>대한민국에서 가장 실력 있는 <br>일본 공략 마케팅 team 어트렉션</p>
+				<a id="contactLink" href="#contactForm" class="inq_btn">지금 문의하기 <img
+						src="/resource/japan/images/c1_arrow.png" alt="우측 화살표 아이콘"></a>
+			</div>
+
+			<div id="snb">
+				<ul>
+					<li class="snb_li1">
+						<a href="" id="portfolioLink">
+							<span class="icon"><img src="/resource/japan/images/c1_snb_icon1.png" alt="문서 아이콘"></span>
+							<p>포트폴리오</p>
+						</a>
+					</li>
+
+					<li class="snb_li2">
+						<a href="http://pf.kakao.com/_sQyxkxb/chat">
+							<span class="icon"><img src="/resource/japan/images/c1_snb_icon2.png"
+									alt="사람 2명 아이콘"></span>
+							<p>카톡 상담</p>
+						</a>
+					</li>
+
+					<li class="snb_li3">
+						<a href="javascript:alert('준비중입니다^^')">
+							<span class="icon"><img src="/resource/japan/images/c1_snb_icon3.png" alt="다운로드 아이콘"></span>
+							<p>제안서 다운</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="cnt2">
+			<div class="tit">
+				<h2>거대한 일본시장에 도전하세요!</h2>
+				<p>일본vs한국 시장규모 분석 그래프</p>
+			</div>
+
+			<div class="txt">
+				<div class="img">
+					<img src="/resource/japan/images/c2_graph.png"
+						alt="인구 : 일본 1억3천만명,한국 5000만명. GDP : 일본 4.2조,한국 1.6조. 시가총액 : 일본 8300조,한국 2300조">
+				</div>
+			</div>
+		</article>
+
+		<article class="cnt3" id="portfolio">
+			<div class="tit">
+				<h3>일본에 도전하는 국내 브랜드, 다음은 <strong>당신입니다.</strong></h3>
+			</div>
+
+			<div class="txt">
+				<ul>
+					<li class="c3_li1">
+						<div class="img_box">
+							<h3 class="logo"><img src="/resource/japan/images/c3_1_logo.png" alt="hince"></h3>
+						</div>
+
+						<div class="txt_box">
+							<h3>힌스(hince)</h3>
+
+							<div class="p_wrap">
+								<p>프리미엄 색조 브랜드 힌스, <br>인스타그램 마케팅을 통한 <br>일본 국민 코스메틱 브랜드로 성장</p>
+								<p>온라인을 넘어 힌스 신주쿠, 힌스 아오야마 등 <br>오프라인 시장으로 확대하여 매출액의 50%를 <br>일본에서 이를 통한 LG 생활건강의 인수까지
+									<br>완료한 대표적 일본 진출 성공 브랜드
+								</p>
+							</div>
+
+							<div class="sns">
+								<a href=""><img src="/resource/japan/images/c3_1_insta.png" alt="instagram"></a>
+								<a href=""><img src="/resource/japan/images/c3_1_talk.png" alt="talk"></a>
+								<a href=""><img src="/resource/japan/images/c3_1_x.png" alt="x"></a>
+							</div>
+						</div>
+					</li>
+
+					<li class="c3_li2">
+						<div class="img_box">
+							<h3 class="logo"><img src="/resource/japan/images/c3_2_logo.png" alt="gng병원"></h3>
+						</div>
+
+						<div class="txt_box">
+							<h3>지앤지병원</h3>
+
+							<div class="p_wrap">
+								<p>일본의 한국 성형외과 선호 문화를 선도하는 <br>국내 최고 수준의 코성형 전문 성형외과</p>
+								<p>트위터와 인스타그램을 필두로 한 온라인 마케팅을 <br>중심으로 많은 일본 고객들을 유치하는데 <br>성공한 정통 한국성형외과 브랜딩</p>
+							</div>
+
+							<div class="sns">
+								<a href=""><img src="/resource/japan/images/c3_2_insta.png" alt="instagram"></a>
+								<a href=""><img src="/resource/japan/images/c3_2_talk.png" alt="talk"></a>
+								<a href=""><img src="/resource/japan/images/c3_2_x.png" alt="x"></a>
+							</div>
+						</div>
+					</li>
+
+					<li class="c3_li3">
+						<div class="img_box">
+							<h3 class="logo"><img src="/resource/japan/images/c3_3_logo.png" alt="rom&nd"></h3>
+						</div>
+
+						<div class="txt_box">
+							<h3>롬앤(Rom&nd)</h3>
+
+							<div class="p_wrap">
+								<p>일본 15~18세의 Z세대를 공략한 <br>대한민국 한국브랜드</p>
+								<p>SNS를 중심으로 한 현지 마케팅전략을 통해 <br>2024년 일본 Z세대 선호 브랜드 1위 달성 <br>아마존 재팬, 라쿠텐 등 대형 이커머스 플랫폼을
+									<br>활용하여 립 관련 타케고리 판매 최상위 기록중
+								</p>
+							</div>
+
+							<div class="sns">
+								<a href=""><img src="/resource/japan/images/c3_3_insta.png" alt="instagram"></a>
+								<a href=""><img src="/resource/japan/images/c3_3_talk.png" alt="talk"></a>
+								<a href=""><img src="/resource/japan/images/c3_3_x.png" alt="x"></a>
+							</div>
+						</div>
+					</li>
+
+					<li class="c3_li4">
+						<div class="img_box">
+							<h3 class="logo"><img src="/resource/japan/images/c3_4_logo.png" alt="THEBORN"></h3>
+						</div>
+
+						<div class="txt_box">
+							<h3>더본코리아</h3>
+
+							<div class="p_wrap">
+								<p>한국 외식문화를 선도하는 더본코리아의 <br>일본 진출, 오프라인 및 온라인 마케팅을 통한 <br>양방향 마케팅 활용으로 일본 내 <br>가맹점 증가 및
+									매출성장세를 견인</p>
+								<p>일본의 코리아타운인 신오쿠보를 중심으로 <br>일본국민으로부터 사랑받는 외식브랜드로 성장중</p>
+							</div>
+
+							<div class="sns">
+								<a href=""><img src="/resource/japan/images/c3_4_insta.png" alt="instagram"></a>
+								<a href=""><img src="/resource/japan/images/c3_4_talk.png" alt="talk"></a>
+								<a href=""><img src="/resource/japan/images/c3_4_x.png" alt="x"></a>
+							</div>
+						</div>
+					</li>
+
+					<li class="c3_li5">
+						<div class="img_box">
+							<h3 class="logo"><img src="/resource/japan/images/c3_5_logo.png" alt="Buldak"></h3>
+						</div>
+
+						<div class="txt_box">
+							<h3>불닭볶음면</h3>
+
+							<div class="p_wrap">
+								<p>K덕후, 일본현지화, 온라인마케팅의 <br>3박자가 이루어 낸 현지성공 전략</p>
+								<p>일본에게 매운 것은 안 통할 것이라는 <br>선입견을 정복한 식품 브랜드.</p>
+								<p>유튜브, 인스타그램, 트위터 등의 후기 컨텐츠를 <br>중심으로 한 마케팅 전략을 통한 성공브랜드</p>
+							</div>
+
+							<div class="sns">
+								<a href=""><img src="/resource/japan/images/c3_5_insta.png" alt="instagram"></a>
+								<a href=""><img src="/resource/japan/images/c3_5_talk.png" alt="talk"></a>
+								<a href=""><img src="/resource/japan/images/c3_5_x.png" alt="x"></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="cnt4">
+			<div class="txt">
+				<h2 class="logo"><img src="/resource/japan/images/hd_logo.png" alt="ATTRACTION"></h2>
+				<h3>일본 진출, <strong>어트렉션<span></span></strong>이 <br>뚝심있게 확실하게 <br>이끌어가겠습니다.</h3>
+			</div>
+		</article>
+
+		<article class="cnt5">
+			<div class="tit">
+				<div class="cc_wrap">
+					<span class="bar"></span>
+					<span class="cc"></span>
+				</div>
+
+				<h3>어트렉션의 <br><strong>실력있는 인재</strong>들을 <br>소개합니다.</h3>
+
+				<div class="swiper-button-next"></div>
+			</div>
+
+			<div class="txt swiper mySwiper">
+				<ul class="swiper-wrapper">
+					<li class="ps1 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>CEO</span> <br>유정웅</h4>
+
+							<h5>학력</h5>
+							<p>와세다대학 <br>정치경제학부 졸업</p>
+
+							<h5>경력</h5>
+							<p>신한투자증권 IPO</p>
+						</div>
+					</li>
+
+					<li class="ps2 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>CTO</span> <br>김 환</h4>
+
+							<h5>학력</h5>
+							<p>아주대학교 <br>화학공업 졸업</p>
+
+							<h5>경력</h5>
+							<p>블로체인 기업 수석개발자</p>
+						</div>
+					</li>
+
+					<li class="ps3 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>COO</span> <br>김웅섭</h4>
+
+							<h5>학력</h5>
+							<p>와세다대학 <br>정치경제학부 졸업</p>
+
+							<h5>경력</h5>
+							<p>한국도요타 <br>글로벌마케팅</p>
+						</div>
+					</li>
+
+					<li class="ps4 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>일본법인장</span> <br>진홍규</h4>
+
+							<h5>학력</h5>
+							<p>큐슈대학 <br>경영학 졸업</p>
+
+							<h5>경력</h5>
+							<p>한국 KOTRA <br>해외영업부</p>
+						</div>
+					</li>
+
+					<li class="ps5 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>일본마케팅팀</span> <br>아키모토 마이</h4>
+
+							<h5>학력</h5>
+							<p>한국외국어대학</p>
+
+							<h5>경력</h5>
+							<p>일본마케팅 <br>에이전시 쿠릭스</p>
+						</div>
+					</li>
+
+					<li class="ps6 swiper-slide">
+						<div class="clear_img"><img src="/resource/japan/images/c5_clear.png" alt=""></div>
+						<h4 class="logo"><img src="/resource/japan/images/c5_sub_logo.png" alt="ATTRACTION"></h4>
+						<div class="content_txt">
+							<span class="bar"></span>
+							<h4><span>일본마케팅팀</span> <br>다나카 사쿠라</h4>
+
+							<h5>학력</h5>
+							<p>큐슈대학 <br>경영학 졸업</p>
+
+							<h5>경력</h5>
+							<p>훗토페이퍼 재직</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</article>
+
+		<article class="cnt6">
+			<div class="tab_split">
+				<ul class="tab_btn">
+					<li class="tab_btn1 on">
+						<a href="">기업진출 <span>컨설팅</span></a>
+					</li>
+
+					<li class="tab_btn2">
+						<a href="">SNS <span>마케팅</span></a>
+					</li>
+
+					<li class="tab_btn3">
+						<a href="">인플루언서 <span>마케팅</span></a>
+					</li>
+
+					<li class="tab_btn4">
+						<a href="">J-COM <span>마케팅</span></a>
+					</li>
+				</ul>
+
+				<div class="tab_cnt">
+					<div class="tab_cnt1">
+						<div class="top">
+							<div class="txt">
+								<h3><strong>일본 진출</strong> <br>기업 컨설팅 서비스</h3>
+								<p>일본 시장 공략을 위한 <br><span>현지 법인 설립, 사무실 계약, 직원 채용까지</span> <br><strong>어트렉션이 원스탑
+										서비스</strong>로 <br>보다 빠르고 확실하게 지원합니다.</p>
+							</div>
+						</div>
+
+						<div class="btm">
+							<div class="tit">
+								<div class="cc_wrap">
+									<span class="bar"></span>
+									<span class="cc"></span>
+								</div>
+
+								<h3><strong>일본 진출 기업</strong> 컨설팅 서비스</h3>
+								<p>다양한 분석과 진단을 통해 고객님께 맞는 맞춤 컨설팅을 제공하며, <br>고객님께서 일본 시장에서 원하시는 목표를 달성할 수 있도록 지원해드립니다.
+								</p>
+							</div>
+
+							<div class="txt">
+								<ul>
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab1_btm_img1.png" alt="">
+										</div>
+										<h4>1. 시장 분석</h4>
+										<p><strong>일본문화에 알맞는 시장조사와 분석</strong>으로 <br>어떤 방법의 마케팅이 가장 효율적일지 <br>함께 고민합니다.
+										</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab1_btm_img2.png" alt="">
+										</div>
+										<h4>2. 솔루션 도출</h4>
+										<p>당장의 매출 개선에 도움이 될 수 있도록 <br><strong>성과 지향적인 마케팅을 도축</strong>하여 <br>최적의 방법을
+											제안합니다.</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab1_btm_img3.png" alt="">
+										</div>
+										<h4>3. 전략 실행</h4>
+										<p>마케팅 실행 후 효과가 지속될 수 있도록 <br><strong>자동화 방안 및 관리방법을 <br>제시</strong>해드립니다.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab_cnt2">
+						<div class="top">
+							<div class="txt">
+								<h3><strong>SNS</strong> 마케팅</h3>
+								<p>단순히 번역만 하여 진행하는 일본마케팅? <br>어트렉션은 한국과 일본에서 실제 활동하고 있는 광고대행사로 <br><strong>일본전문가 및
+										일본스탭들로 구성된 <br>일본 마케팅 전문팀</strong>입니다. <br>진짜 일본에서 통할 수 있는 마케팅은 <br>어트렉션만이 가능합니다
+								</p>
+							</div>
+						</div>
+
+						<div class="btm">
+							<div class="tit">
+								<div class="cc_wrap">
+									<span class="bar"></span>
+									<span class="cc"></span>
+								</div>
+
+								<h3><strong>SNS</strong> 마케팅</h3>
+								<p>전문 마케터&디자이너들이 광고주님의 <strong>브랜드를 파악</strong> 후, <br>SNS 계정에 업로드 될 <strong>컨텐츠를
+										제작</strong>하여 계정을 관리해드립니다.</p>
+							</div>
+
+							<div class="txt">
+								<ul>
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab2_btm_img1.png" alt="">
+										</div>
+										<h4>브랜드 파악 및 기획</h4>
+										<p>고객님의 브랜드에 어울리는 톤앤배너부터 <br>레퍼런스 자료까지. <br>꾸준하고 체계적인 관리를 해드립니다.</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab2_btm_img2.png" alt="">
+										</div>
+										<h4>디자인 이미지 및 원고 제작</h4>
+										<p>브랜드의 이미지와 맞는 퀄리티의 <br>이미지와 원고를 제작합니다.</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab2_btm_img3.png" alt="">
+										</div>
+										<h4>온라인 공략 시스템</h4>
+										<p>일본 고객 활성화를 위한 다양한 종류의 <br>온라인 마케팅 서비스를 진행 예정입니다.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab_cnt3">
+						<div class="top">
+							<div class="txt">
+								<h3><strong>인플루언서</strong> <br>마케팅</h3>
+								<p>일본 내의 인플루언서를 활용하면 <br>기대할수 있는 매출 상승이 훨씬 커집니다. <br>일본은 인플루언서와 같은 <br>셀럽의 영향을 많이 받는
+									시장입니다. <br>어트렉션은 그 부분을 공략하여 <br>더욱 효과적인 마케팅을 진행하고자 합니다.</p>
+								<span class="arrow"><img src="/resource/japan/images/c6_tab3_top_arrow.png"
+										alt=""></span>
+							</div>
+						</div>
+
+						<div class="btm">
+							<div class="tit">
+								<h3><strong>인플루언서</strong> 마케팅</h3>
+								<p><span>우리의 브랜드에 알맞는 팔로워와 구독자를 보유하고 있는 인플루언서를 <br>브랜드와 매칭하는 것이 가장 중요한 마케팅 포인트 입니다.
+									</span><br><strong>어트렉션은 다양한 인플루언서 네트워크와 경험</strong>을 통해 <strong>최적의 인플루언서를
+										매칭</strong>합니다.</p>
+							</div>
+
+							<div class="txt">
+								<ul>
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab3_btm_img1.png" alt="">
+										</div>
+										<h4>1. 1:1 상담</h4>
+										<p>각 분야의 전문가가 제품 및 예산, <br>상황에 맞는 <strong>1:1 맞춤 컨설팅을 <br>진행</strong>합니다.</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab3_btm_img2.png" alt="">
+										</div>
+										<h4>2. 인플루언서 선정</h4>
+										<p>데이터를 분석 후 <strong>제품에 맞는 <br>인플루언서를 직접 확인 후 <br>선정</strong>합니다.</p>
+									</li>
+
+									<li>
+										<div class="img"><img src="/resource/japan/images/c6_tab3_btm_img3.png" alt="">
+										</div>
+										<h4>3. 콘텐츠 작성 및 관리 </h4>
+										<p>각 광고의 <strong>가이드라인</strong>에 맞는 <br>콘텐츠를 제작하고, <br>검수 과정을 거쳐 <strong>퀄리티 있는
+												<br>컨텐츠를 업로드</strong>합니다.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab_cnt4">
+						<div class="top">
+							<div class="tit">
+								<h3><strong>J-COM</strong> 마케팅</h3>
+								<p>어트렉션의 주력 마케팅 서비스로 TV 채널 전환 시, 발생하는 검은 화면에 <br>스틸컷 이미지 소재를 타겟팅하여 시청자들에게 노출시키는 신개념 디지털
+									광고 플랫폼입니다.</p>
+							</div>
+
+							<div class="txt">
+								<ul>
+									<li class="tc4_li1">
+										<div class="img"><img src="/resource/japan/images/c6_tab4_top_img1.png" alt="">
+										</div>
+										<h4>기존 채널 전환 시</h4>
+									</li>
+
+									<li class="tc4_li2">
+										<div class="img"><img src="/resource/japan/images/c6_tab4_top_img2.png" alt="">
+										</div>
+										<h4>ZAP 서비스 채널 전환 시</h4>
+										<p>타겟팅 된 채널에서 탈출 시 (어떤 채널로 이동하든 상관없이) <br>ZAP광고가 노출됩니다. </p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="btm">
+							<div class="tit">
+								<div class="cc_wrap">
+									<span class="bar"></span>
+									<span class="cc"></span>
+								</div>
+
+								<h3>광고 <strong>레퍼런스</strong></h3>
+								<p><strong>J-com 광고에 실제로 노출</strong>되었던 광고 레퍼런스를 소개해드립니다.</p>
+							</div>
+
+							<div class="txt swiper mySwiper2">
+								<div class="visual swiper-wrapper">
+									<div class="visual1 swiper-slide">
+										<ul>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img1.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img2.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img3.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img4.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img5.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img6.png" alt=""></li>
+										</ul>
+									</div>
+
+									<div class="visual2 swiper-slide">
+										<ul>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img1.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img2.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img3.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img4.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img5.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img6.png" alt=""></li>
+										</ul>
+									</div>
+
+									<div class="visual3 swiper-slide">
+										<ul>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img1.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img2.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img3.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img4.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img5.png" alt=""></li>
+											<li><img src="/resource/japan/images/c6_tab4_btm_img6.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="swiper-button-next swiper-arrow"></div>
+								<div class="swiper-button-prev swiper-arrow"></div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="cnt7">
+			<div class="area">
+				<ul>
+					<li class="c7_li1">
+						<div class="h4_wrap">
+							<h5><span>01</span></h5>
+							<h4>기업분석 및 시장조사</h4>
+						</div>
+
+						<span class="arrow"><img src="/resource/japan/images/c7_arrow.png" alt=""></span>
+
+						<div class="p_wrap">
+							<span class="icon"><img src="/resource/japan/images/c7_icon1.png" alt=""></span>
+							<p>시장을 파악하고 우리의 강점과 약점을 정확하게 인식하는 과정은 <br>마케팅 성공에 있어 가장 빠질 수 없는 중요 미션입니다. 어트렉션은 <br>고객사가
+								진출하려는 <strong>일본내 시장조사 및 고객사의 장점과 약점을 면밀히 분석</strong>하여 <br>일본시장 공략의 첫 스탭을 완벽을 기해 준비합니다.
+							</p>
+						</div>
+					</li>
+
+					<li class="c7_li2">
+						<div class="h4_wrap">
+							<h5><span>02</span></h5>
+							<h4>마케팅 전략 수립 </h4>
+						</div>
+
+						<span class="arrow"><img src="/resource/japan/images/c7_arrow.png" alt=""></span>
+
+						<div class="p_wrap">
+							<span class="icon"><img src="/resource/japan/images/c7_icon2.png" alt=""></span>
+							<p>기업분석 및 시장조사 결과를 기반으로 <br>고객사에게 가장 적합하고 <strong>효율적인 마케팅 전략을 수립</strong>합니다. <br>어트렉션은 일본
+								내 온라인광고는 물론 오프라인광고, 티비광고 등 일본내 <br>모든매체의 마케팅 실행이 가능하기에 가장 최선의 미디어믹스 마케팅 전략을 제안합니다.</p>
+						</div>
+					</li>
+
+					<li class="c7_li3">
+						<div class="h4_wrap">
+							<h5><span>03</span></h5>
+							<h4>마케팅 데이터 <br>분석 및 전략 리빌딩 </h4>
+						</div>
+
+						<span class="arrow"><img src="/resource/japan/images/c7_arrow.png" alt=""></span>
+
+						<div class="p_wrap">
+							<span class="icon"><img src="/resource/japan/images/c7_icon3.png" alt=""></span>
+							<p><strong>하나의 마케팅 사이클을 진행 후 해당 데이터를 기반으로 <br>마케팅의 과정과 성과, 부족한 부분을 확인</strong>하고 이를 토해
+								<br>다음 사이클이 보다 더 효율적인 마케팅성과를 이룰 수 있도록 <br>마케팅전략 리빌딩을 진행합니다.
+							</p>
+						</div>
+					</li>
+
+					<li class="c7_li4">
+						<div class="h4_wrap">
+							<h5><span>04</span></h5>
+							<h4>마케팅 실행</h4>
+						</div>
+
+						<span class="arrow"><img src="/resource/japan/images/c7_arrow.png" alt=""></span>
+
+						<div class="p_wrap">
+							<p><strong>기업분석, 시장현황, 마케팅전략을 기반으로 수립된 전략에 따라 <br>해당 마케팅 캠페인을 실행</strong>합니다. 어트렉션은 한국 및 일본인
+								마케팅전문가로 구성된 <br>일본마케팅 전문가 집단으로 최적의 마케팅 실행력을 통해 <br>반드시 성공하는 마케팅결과를 도출합니다.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="cnt8">
+			<span class="deco deco1"><img src="/resource/japan/images/c8_deco1.png" alt=""></span>
+			<span class="deco deco2"><img src="/resource/japan/images/c8_deco2.png" alt=""></span>
+
+			<div class="wrap">
+				<h3>Contact.</h3>
+				<form action="/client/japanInsert" method="post" id="contactForm">
+					<div class="ul_wrap">
+						<ul>
+							<li>
+								<label>성명/업체명<span>*</span></label>
+								<input type="text" name="name" required>
+								<input type="hidden" name="sort" value="true">
+							</li>
+
+							<li>
+								<label>이메일 주소<span>*</span></label>
+								<input type="email" name="email" required>
+							</li>
+
+							<li>
+								<label>전화번호<span>*</span></label>
+								<input type="text" name="phone" required>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<label>문의 상세사항<span>*</span></label>
+								<textarea name="content"></textarea>
+							</li>
+						</ul>
+					</div>
+					<button class="submit_btn" type="submit">문의하기<img src="/resource/japan/images/c8_arrow.png"
+							alt=""></button>
+				</form>
+			</div>
+		</article>
+	</section>
+	<div class="fixed-buttons">
+		<a href="tel:1833-5180" id="callButton"><i class="fas fa-phone"></i></a>
+		<a href="#" id="scrollTop"><i class="fas fa-arrow-up"></i></a>
+	</div>
+	<script>
+
+		document.querySelectorAll('.sns a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                alert('준비중입니다');
+            });
+        });
+
+        document.getElementById('contactLink').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScrollTo('contactForm', 500);
+        });
+
+        document.getElementById('portfolioLink').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScrollTo('portfolio', 500);
+        });
+
+        const scrollTopButton = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 200) {
+                scrollTopButton.classList.add('visible');
+            } else {
+                scrollTopButton.classList.remove('visible');
+            }
+        });
+
+        scrollTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            smoothScrollToTop(500);
+        });
+
+        function smoothScrollTo(id, duration) {
+            const target = document.getElementById(id);
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            let start = null;
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const progressPercentage = Math.min(progress / duration, 1);
+                window.scrollTo(0, startPosition + distance * progressPercentage);
+
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+
+            window.requestAnimationFrame(step);
+        }
+
+        function smoothScrollToTop(duration) {
+            const startPosition = window.pageYOffset;
+            let start = null;
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const progressPercentage = Math.min(progress / duration, 1);
+                window.scrollTo(0, startPosition * (1 - progressPercentage));
+
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+
+            window.requestAnimationFrame(step);
+        }
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('CI/디자인')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<!-- <section id="page-title"
+			style="background-image: url('/resource/front/image/11.png')">
+			<div class="container clearfix">
+				<h1>Brand</h1>
+				<span>고유의 감성을 담은 CI/Design</span>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">CI/DESIGN</li>
+				</ol>
+			</div>
+		</section> -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/design-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/design.jpg"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+				</div>
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>어트렉션의 장점</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-screen"></i>고민되는 디자인, 한번에 해결<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-magic"></i>합리적인
+												가격<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>디자인 작업도 어트렉션과 함께라면?</h3>
+											<span>Why don't we make it perfect?</span>
+										</div>
+										<p>신속하고 전문적인 상담으로 고객의 니즈를 파악하고, 고객의 입맛에 맞춘 디자인을 합니다.</p>
+										<p>상세한 오브젝트와 색상 등, 원하시는 디자인이 나올 수 있도록 최선을 다합니다.</p>
+										<p>감각적이고, 트렌디한 디자인으로 확실한 아이덴티티 컬러와 브랜드 가치를 상승시키는 어트렉션의
+											노하우를 만나보세요.</p>
+										<img src="/resource/front/image/detail/br_design_01.png">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>착한 가격으로 최대의 효과</h3>
+											<span>Crisp &amp; Clear Graphics across all your
+												Retina &amp; Standard Devices.</span>
+										</div>
+										<p>저렴한 가격으로 최대한의 효과를 누릴 수 있는 어트렉션의 상품들을 만나보세요.</p>
+										<p>사업을 시작했는데, 로고/상세페이지제작업체에 작업을 맡기자니 비싼 가격때문에 부담스러우신분들.
+											기존에 있던 로고/상세페이지가 있는데 트렌디한 디자인으로 다시 바꿔보고싶지만 예산초과 때문에 힘들 것 같다
+											하시는 분들. 모두 어트렉션에선 예산에 맞춘 퀄리티의 디자인과 브랜딩이 가능합니다.</p>
+										<p>전문 디자이너들이 과반수인 어트렉션에서는 퀄리티 높은 디자인의 상세페이지와 로고, 패키지디자인이
+											가능합니다.</p>
+										<img src="/resource/front/image/detail/br_design_02.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

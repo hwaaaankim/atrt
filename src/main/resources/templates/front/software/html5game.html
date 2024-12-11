@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('HTML5게임')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<!-- <section id="page-title"
+			style="background-image: url('/resource/front/image/11.png')">
+			<div class="container clearfix">
+				<h1>Software</h1>
+				<span>Html5 Game 개발 서비스</span>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Game</li>
+				</ol>
+			</div>
+		</section> -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/html5game-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/html5-02.png"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+
+				</div>
+				<!-- <div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div> -->
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>Attract Point</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-mobile"></i>모바일로 접근하기 쉬운 html5 게임<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-star"></i>특별한
+												콘텐츠의 이벤트성 광고<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i
+												class="icon-line2-user-follow"></i>웹사이트 유입률과 밀접한 이벤트<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content4"><i class="icon-heart"></i>전문인력
+												1:1 매칭<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>언제 어디서든 즐길 수 있는 이벤트.</h3>
+											<span>An event that you can enjoy anytime, anywhere.</span>
+										</div>
+										<!-- <div class="fslider alignleft" data-arrows="false"
+											style="width: 250px;">
+											<div class="flexslider">
+												<div class="slider-wrap">
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/1.jpg"
+															alt="Slider 1">
+													</div>
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/7.jpg"
+															alt="Slider 2">
+													</div>
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/10.jpg"
+															alt="Slider 3">
+													</div>
+												</div>
+											</div>
+										</div> -->
+
+										<p>Html5 게임?</p>
+
+										<p>
+											"핸드폰과 인터넷만 있다면 어디에서든 할 수 있어" 번거롭게 어플다운? 필요없지.<br> 옛날 감성
+											뿜뿜! 도트게임, 슈팅게임, 팬시게임 등 모바일·pc 모두 Ok!
+										</p>
+										<img src="/resource/front/image/detail/pro-mo.jpg">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>각종 이벤트 제작에 적합한 아이템.</h3>
+											<span>Items suitable for producing various events.</span>
+										</div>
+										<p>나만의 특별한 게임을 제작하고싶거나 이벤트를 기획하고 계시다면 추천드리는 상품.</p>
+										<p>타 웹 이벤트와는 비교할 수 없는 유니크함을 가질 수 있어요!</p>
+										<p>참여자의 흥미를 끌어올려 빠져들게 하는 효과를 가진 html5 게임은 각종 전시 이벤트, 웹
+											상에서의 브랜딩에도 큰 효과를 보입니다. 게임 점수에 따른 보상과 공유 이벤트와의 연계로 sns상에서의 밈으로
+											활용 될 수도 있죠. 연령대도 다양하게 잡을 수 있어 광범위한 대상에게 홍보를 하기 적합한 이벤트성
+											프로그래밍입니다.</p>
+										<img src="/resource/front/image/detail/pro-event.jpg">
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>페이스북 &amp; 인스타그램 &amp; 트위터 등 sns에 확산!</h3>
+											<span>effective social-community advertising</span>
+										</div>
+										<p>각종 sns상에서 접근하기 쉬운 온라인 형태로 인터넷만 있다면 사용가능한 유입 편의성을 가졌습니다.</p>
+										<p>고로 meta sponsored 광고나 트위터 등 다양한 유입 커뮤니티, 블로그 포스팅 등 배포와
+											유입에 장점을 띄는만큼 타 플랫폼과의 호환성을 이용해 더욱 유입량을 늘리는것입니다.</p>
+										<img src="/resource/front/image/detail/pro-sns.jpg">
+									</div>
+
+									<div id="snav-content4">
+										<div class="heading-block">
+											<h3>어트렉션은 당연히 1:1 컨설팅.</h3>
+											<span>Of course, the attraction is 1:1 consulting.</span>
+										</div>
+										<p>더욱 매력적인 게임과 그 취지에 맞는 이벤트를 설계하기 위해선 당연히 1:1 맞춤 상담과 설계가
+											필요합니다.</p>
+										<p>
+											차근차근, 고객님의 눈높이에 맞추어 기획을 하고 구체적인 이벤트 진행을 설계 후 진행까지.<br>처음부터
+											마지막까지 저희가 함께합니다. 걱정없이 전문가와 함께 하세요! 다양한 인력들이 적절한곳에 배치되어 완벽히
+											굴러가는 톱니바퀴를 보실 수 있을거에요. 소중한 고객님의 브랜드를 더욱 매력적이고 이끌리게 만드는 노하우,
+											믿을 수 있습니다.
+										</p>
+										<img src="/resource/front/image/detail/pro-maching.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

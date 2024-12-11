@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('웹사이트개발')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/arfilter-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/arfilter-01.jpg"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+				</div>
+				<div class="container clearfix mt-5">
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>Attract Point</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-star"></i>트렌디한 MZ세대 공략아이템<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-coins"></i>필수가
+												된 메타버스 적용 마케팅<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i
+												class="icon-line-pen-tool"></i>쉽고 자유로운 접근<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content4"><i class="icon-snapchat"></i>바이럴마케팅
+												효과<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>MZ세대 공략? 어트렉션이 잘알지.</h3>
+											<span>Targeting the MZ generation? Attraction knows it
+												well.</span>
+										</div>
+										<p>
+											직원부터가 젊다. MZ세대가 운영중인 어트렉션은 최신 밈, 트렌드를 전부 공략하고 있어요.<br>
+											다양한 메타버스 장르부터 유튜브애서 핫한 밈, 릴스, 틱톡까지 전부.
+										</p>
+
+										<p>
+											그래서, 왜 AR필터를 해야하는가?<br>답변은 정해져있답니다! 이게 트렌드니까!
+										</p>
+										<img src="/resource/front/image/detail/pro-mz.jpg">
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>메타버스? 그게 뭔데 핫해?</h3>
+											<span>Metabus? What's that?</span>
+										</div>
+										<p>요즘핫한 메타버스 세계관. 그게 뭘까요?</p>
+										<p>메타버스는 가상현실 세계로 이루어져 가상공간에서 여러 사람들이 접속하여 동시에 소통할 수 있죠.
+											이런한 세계관을 활용한 다양한 컨텐츠가 쏟아져 나오며 이젠 ar필터도 하나의 트렌드를 이끌어가는 메타버스
+											요소가 적용된 마케팅 수법이랍니다.</p>
+										<p>그래서 더욱 핫한 이 세계를 쫒아가기 위해 어트렉션의 고객사들은 거의 필수라고 볼 수 있는
+											광고서비스로 채택하여 최근에 인기가 많아지고 있는 서비스에요.</p>
+										<img src="/resource/front/image/detail/pro-meta.jpg">
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>접근하기 너무 쉽다.</h3>
+											<span>It's too easy to approach.</span>
+										</div>
+										<p>일반인들이 가장 많이 접속하는 플랫폼, Instagram, tiktok 등 AR필터를 가장 많이
+											사용하는 플랫폼에서 광고와 함께 진행하는것만큼 효과적인 노출방법이 있을까요?</p>
+										<p>답은 '아니요'입니다. AR필터로 브랜딩하기는 최근들어서 가장 효과적인 방법이라고 자부할 수
+											있답니다.</p>
+										<img src="/resource/front/image/detail/pro-approach.jpg">
+									</div>
+
+									<div id="snav-content4">
+										<div class="heading-block">
+											<h3>그냥 되는 바이럴 마케팅</h3>
+											<span>Viral marketing that works</span>
+										</div>
+										<p>대충 스토리에 올리면 뚝딱. 바이럴까지 되네?</p>
+										<p>너도 나도 따라하게 만드는 특별함. 인스타그램 스토리 및 틱톡에서 더욱 효과적인 바이럴 마케팅이
+											되죠.</p>
+										<p>이어찍기 컨텐츠, 유명 인플루언서 효과 등으로 노출 수는 더욱 upup! 당신의 브랜드를 밈으로
+											만들어보세요!</p>
+										<img src="/resource/front/image/detail/pro-viral.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<th:block th:replace="/fragments/front/common :: iconsBox"></th:block>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+</body>
+
+</html>

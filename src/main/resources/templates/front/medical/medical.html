@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<title>어트렉션</title>
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="/resource/front/dflip/css/dflip.min.css" rel="stylesheet"
+	type="text/css">
+<link href="/resource/front/dflip/css/themify-icons.min.css"
+	rel="stylesheet" type="text/css">
+<link href="/resource/front/dflip/css/style.css" rel="stylesheet"
+	type="text/css">
+<meta name="title" content="SNS마케팅의 모든것, 어트렉션">
+<meta name="description"
+	content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta name="keywords"
+	content="어트렉션, ATTRACTON, SNS광고, SNS마케팅, SNS홍보, 인스타그램광고, 인스타광고, 인스타그램마케팅, 인스타마케팅, 인스타그램홍보, 인스타홍보, 한국인팔로워늘리기, 인스타팔로워늘리기, 팔로워늘리기, 인플루언서">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="ATTRACTION" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atrt.co.kr/">
+<meta property="og:title" content="SNS마케팅의 모든것, 어트렉션">
+<meta property="og:description"
+	content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta property="og:image"
+	content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://atrt.co.kr/">
+<meta property="twitter:title" content="SNS마케팅의 모든것, 어트렉션">
+<meta property="twitter:description"
+	content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta property="twitter:image"
+	content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+
+<!-- Verification Codes -->
+<meta name="google-site-verification"
+	content="Ye5iuEqYs3nHh2BNqlJixL8yJukpThrmXWl2LutBPt4" />
+<meta name="naver-site-verification"
+	content="bf9d69aba60353e4107c0623339273151c987c5b" />
+<meta name="facebook-domain-verification"
+	content="q9dhjo616mxkptm6b4cqbvasqnb92g" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://atrt.co.kr/" />
+<link rel="shortcut icon" href="/resource/front/image/logo.ico">
+</head>
+
+<body>
+
+	<div class="container" style="height: 100vh; overflow: hidden;">
+
+		<div class="row">
+
+			<div class="col-xs-12" style="padding-bottom: 30px">
+				<div class="_df_book" height="1000" webgl="true"
+					backgroundcolor="teal"
+					source="/resource/front/dflip/books/template.pdf"
+					id="df_manual_book"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="btn-wrap">
+		<button onclick="javascript:location.href='tel:1833-5180'"
+			class="btn telBtn">전화상담</button>
+		<button
+			onclick="javascript:location.href='http://pf.kakao.com/_sQyxkxb/chat'"
+			class="btn kakaoBtn">카카오톡상담</button>
+		<button onclick="javascript:location.href='/community/inquiry'"
+			class="btn insertBtn">상담신청</button>
+		<button onclick="javascript:location.href='/'"
+			class="btn homeBtn">HOME</button>	
+	</div>
+	<script src="/resource/front/dflip/js/libs/jquery.min.js"
+		type="text/javascript"></script>
+	<script th:inline="javascript">
+		var whatPage = /*[[${page}]]*/'default';
+		if(whatPage>33){
+			whatPage = 33;
+		}
+	</script>
+	<script src="/resource/front/dflip/js/dflip.js" type="text/javascript"></script>
+</body>
+
+</html>

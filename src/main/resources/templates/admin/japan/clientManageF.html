@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <th:block th:replace="fragments/admin/common :: header('고객상세')"></th:block>
+</head>
+
+<body>
+  <section id="container">
+  	<th:block th:replace="fragments/admin/common :: side(${session['name']})"></th:block>
+		<section id="main-content">
+			<section class="wrapper">
+				<h3><i class="fa fa-angle-right"></i> 고객상세</h3>
+				<div class="row mt">
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						
+						<form class="contact-form php-mail-form" role="form" th:action="@{/admin/clientUpdate}"
+						onsubmit="return check();" method="POST">
+							<div class="form-group">
+								<h6 class="title">고객 성함</h6>
+								<input type="text" name="name" class="form-control" th:value="${client.name}">
+								<input type="hidden" th:value="${client.id}" name="id">
+							</div>
+							<div class="form-group">
+								<h6 class="title">고객 연락처</h6>
+								<input type="text" name="phone" class="form-control" th:value="${client.phone}">
+							</div>
+							<div class="form-group">
+								<h6 class="title">고객 이메일</h6>
+								<input type="text" name="email" class="form-control" th:value="${client.email}">
+							</div>
+							
+							<div class="form-group">
+								<h6 class="title">문의 시간</h6>
+								<input th:value="${client.inquiryDate}" style="line-height:15px; padding:5px 6px;" type="text" id="date" name="inquiryDate" class="form-control"
+								 disabled>
+							</div>
+							<div class="form-group">
+								<h6 class="title">최근 수정시간</h6>
+								<input th:value="${client.correctDate}" style="line-height:15px; padding:5px 6px;" type="text" name="cdate" id="correctDate" class="form-control"
+								 disabled>
+							</div>
+							<div class="form-group">
+								<h6 class="title">고객 문의 카테고리</h6>
+								<select class="form-control" name="subject">
+									<option th:selected="${searchSubject == 'insta'}" th:value="insta">인스타그램(SNS)마케팅 문의</option>
+									<option th:selected="${searchSubject == 'website'}" th:value="website">웹사이트/프로그램 개발 문의 </option>
+									<option th:selected="${searchSubject == 'keyword'}" th:value="keyword">키워드 검색마케팅 문의</option>
+									<option th:selected="${searchSubject == 'design'}" th:value="design">디자인 문의</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<h6 class="title">상세사항</h6>
+								<input type="text" name="detail" class="form-control" th:value="${client.detail}">
+							</div>
+							<div class="form-group">
+								<h6 class="title">고객 문의사항</h6>
+								<textarea class="form-control" name="content" rows="5" th:text="${client.content}"></textarea>
+							</div>
+
+							<div class="form-send">
+								<button type="submit" class="btn btn-large btn-primary">확인</button>
+								<button type="button" class="btn btn-large btn-primary" 
+								th:onclick="|deleteClient(${client.id})|">삭제</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<h4 class="title">고객 관리 페이지</h4>
+						<ul class="contact_details">
+							<li><i class="fa fa-envelope-o"></i> contact@atrt.co.kr</li>
+							<li><i class="fa fa-phone-square"></i> 1833-5180</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+  	<th:block th:replace="fragments/admin/common :: script"></th:block>
+	<script th:inline="javascript">
+		var client = /*[[${client}]]*/ 'default';
+		$(function(){
+			$('#date').val(client.date.slice(0, 19));
+			$('#cdate').val(client.cdate.slice(0, 19));
+		});
+	</script>
+	<script>
+	function deleteClient(id){
+		var result = confirm('해당 고객을 삭제 하시겠습니까?');
+		if(result){
+			location.href='/admin/clientDelete/'+id;
+		}
+	}
+	function check(){
+		var result = confirm('변경 사항은 수정됩니다. 진행하시겠습니까?');
+		if(result){
+			return true;		
+		}
+	}
+	</script>
+</body>
+
+</html>

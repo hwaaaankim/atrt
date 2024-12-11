@@ -1,0 +1,15 @@
+.chart-samples ul { list-style: none; }
+
+.chart-samples h4 {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.chart-samples li {
+	font-size: 16px;
+	line-height: 2.2;
+	font-weight: 600;
+}
+
+.chart-samples li a:not(:hover) { color: #AAA; }

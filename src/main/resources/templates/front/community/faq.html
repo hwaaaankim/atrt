@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/front/common :: headerSrc('자주묻는질문')">
+
+</head>
+
+<body class="stretched">
+<th:block th:replace="/fragments/front/common :: gaScript"></th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:replace="/fragments/front/common :: headNav"></th:block>
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-12">
+							<picture>
+							<source media="(max-width: 760px)"
+								srcset="/resource/front/image/mobile/faq-m.jpg">
+							<img data-animate="fadeIn"
+								src="/resource/front/image/new04/faq.png"
+								alt="IfItDoesntMatchAnyMedia"> </picture>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="divider divider-sm">
+					<i class="icon-star"></i>
+				</div>
+
+				<!-- Document Wrapper ============================================= -->
+				<div id="wrapper" class="clearfix">
+
+					<!-- Content ============================================= -->
+					<section id="content">
+						<div class="content-wrap">
+							<div class="container clearfix">
+
+								<div class="row justify-content-center gutter-50">
+									<div class="clear"></div>
+									<div class="col-lg-3">
+
+										<div class="grid-filter-wrap">
+											<ul
+												class="grid-filter flex-column align-items-start customjs shadow-sm">
+
+												<li class="activeFilter"><a href="#"
+													class="fw-semibold" data-filter="all">전체보기</a></li>
+												<li><a href="#" class="fw-semibold"
+													data-filter=".faq-account">계정</a></li>
+												<li><a href="#" class="fw-semibold"
+													data-filter=".faq-pay">결제 및 환불</a></li>
+												<li><a href="#" class="fw-semibold"
+													data-filter=".faq-service">서비스</a></li>
+
+											</ul>
+										</div>
+
+									</div>
+
+									<div class="col-lg-9">
+
+										<div id="faqs" class="faqs">
+
+											<div class="toggle faq pb-3 mb-3 faq-marketplace faq-account">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">작업 시 계정은 안전한가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">인스타그램 규정을 준수하여 작업이
+													되며, 고객님 계정 정보는 암호화되어 보관 후 서비스가 종료되면 자동 폐기됩니다.</div>
+											</div>
+
+											<div class="toggle faq pb-3 mb-3 faq-authors faq-account">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">비공개 계정은 왜 서비스를 이용할 수
+														없나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">서비스는 시스템을 통하여 계정을
+													감지하기 때문에 비공개인 경우 감지할 수 없어 서비스 이용이 불가능합니다. 서비스를 원하시면 공개로 전환
+													후 문의 주시기 바랍니다.</div>
+											</div>
+
+											<div class="toggle faq pb-3 mb-3 faq-account">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">어떤 계정들로 서비스가 진행되나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">서비스에 따라 이용되는 계정은
+													다양합니다. 본인의 계정이 아닌 사용되는 계정은 자사가 구축한 네트워크의 실계정으로 진행되니 안전합니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-authors faq-legal faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">서비스 진행은 어떻게 되나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">결제 완료 후 5~10분 이내로 주문이
+													들어가며 완료 시점은 상품에 따라 상이하며, 인스타그램 업데이트 및 서버 점검에 따라 주문이 지연될 수
+													있습니다. 자세한 내용이 궁금하시면 문의 바랍니다.</div>
+											</div>
+
+											<div class="toggle faq pb-3 mb-3 faq-marketplace faq-pay">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">교환이나 환불 규정은 어떻게 되나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">모든 규정은 계약서를 기준으로
+													처리됩니다. 서비스가 진행된 교환 및 환불은 불가하며, 아이디 착오로 인한 환불은 불가하니 반드시 서비스
+													진행 전 확인 바랍니다. 주의사항을 참고하지 않아 발생되는 피해는 책임지지 않습니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-affiliates faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">서비스 진행중 로그인 하여 아이디를
+														변경해도 괜찮나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">서비스 진행중에는 최대한 중복로그인은
+													삼가시는 게 좋으며 아이디 변경은 서비스 진행해 차질이 생길 수 있기 때문에 자제해주시는 것이 좋습니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-legal faq-pay">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">구매한 팔로워가 줄어들 시 A/S가 가능한가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">쿨스타그램에서 제공하는 서비스의 경우
+													팔로워 감소는 극히 적은 편이나 보증기간 내에 서비스 팔로워를 제외하고 많은 수의 팔로워가 줄어들었을 경우
+													A/S가 가능합니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-legal faq-authors faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">팔로워가 상승하는 속도를 자연스럽게 조절할 수 있나요? ?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">가능합니다. 자연스러운 작업을 위해
+													서서히 팔로워가 증가하는 서비스가 있습니다.</div>
+											</div>
+
+											<div class="toggle faq pb-3 mb-3 faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">사진을 삭제해도 되나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">서비스 진행중에 사진을 삭제할 시
+													최적화에 문제가 생길 수 있습니다. 진행중에는 최대한 자제해주시는 게 좋습니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-authors faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">인기게시물 노출이 무엇인가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">인기게시물 노출은 인스타그램에서
+													#태그를 검색하면 나오는 인기게시물 영역에 1위~10위까지 노출이 되는 서비스입니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">현재 제가 보유하고 있는 계정으로
+														인기게시물 노출이 가능한가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">프리미엄 계정육성 서비스를 통해
+													고객님의 계정이 인기게시물 영역에 노출 가능한 최적화 계정이 될 수 있으며, 최적화 지수에 따라 노출
+													순위가 결정됩니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">현계정이 최적화 되는 기간은 어느정도
+														인가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">일반적으로는 30일 정도 소요됩니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">인스타그램이 처음이어도 할 수 있나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">전문 마케터와 함께 A-Z 자세히
+													안내를 도와드리기 때문에 어려움 없이 적용하실 수 있습니다!</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">마케팅 효과가 있나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">단순히 홍보에서 그치는 것이 아니라
+													돈이 되는 마케팅을 하셔야합니다. 매출이 오르고 브랜드 인지도를 올리는 데에 중심적인 역할을 합니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">인플루언서 섭외는 어떻게 진행되나요?
+														제가 원하는 인플루언서도 가능한가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">다년간 인플루언서 서비스를 지원한
+													노하우로 고객 업종과 어울리는 인플루언서 매칭을 도와드립니다. 특정 인플루언서를 원하실 경우 컨택하여 진행
+													가능한 방향으로 도와드리고 있습니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">그냥 좋아요랑 팔로워만 많으면 인기게시물에 노출되는게
+														아닌가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">단순히 좋아요와 팔로워가 많다고
+													노출되지 않습니다. 계정의 등급에 따라 노출의 범위가 달라지며, 홍보목적의 계정이라면 노출이 가능하도록
+													계정 최적화 작업을 우선 진행하는 것을 추천드립니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+													<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">와디즈 진행 시 펀딩시작까지의 기간은
+														얼마나 걸리나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">고객님 제품에 대한 맞춤 스토리텔링부터
+													구매를 유도하는 사진촬영 및 상세페이지 제작까지 여기에 와디즈 등록 소요 기간 까지 최소 약
+													3주 이상의 기간이 소요됩니다. 이는 고객님의 상황에 따라 변동되는 부분으로 마케터와의 상담을
+													추천드립니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">저는 인스타그램보다 블로그 광고를
+														하고싶은데 가능한가요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">블로그 광고도 가능합니다! 다만 상담시
+													마케터가 고객님의 업종에 따라 홍보에 유리한 플랫폼을 제안드릴 수 있습니다.</div>
+											</div>
+
+											<div
+												class="toggle faq pb-3 mb-3 faq-marketplace faq-service">
+												<div class="toggle-header">
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-question-sign"></i> <i
+															class="toggle-open icon-question-sign"></i>
+													</div>
+													<div class="toggle-title ps-1">인스타그램 스폰서 광고는 언제부터
+														시작하나요?</div>
+													<div class="toggle-icon">
+														<i class="toggle-closed icon-line-chevron-down"></i> <i
+															class="toggle-open icon-line-chevron-up"></i>
+													</div>
+												</div>
+												<div class="toggle-content ps-4">기간과 시작날짜를 정해서 시작을 맞출
+													수 있으나 결제 후 계정상태에 따라 시작 시점이 달라질 수 있습니다.</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+								<!-- .postcontent end -->
+
+							</div>
+						</div>
+					</section>
+					<!-- #content end -->
+				</div>
+				<!-- #wrapper end -->
+
+
+
+
+
+
+				<!-- <div class="container clearfix mt-5">
+					<div
+						class="owl-carousel image-carousel carousel-widget flip-card-wrapper clearfix"
+						data-margin="20" data-nav="true" data-pagi="false"
+						data-items-xs="2" data-items-sm="2" data-items-md="3"
+						data-items-lg="4" data-items-xl="4" style="overflow: visible;">
+
+						<div class="flip-card">
+							<div class="flip-card-front dark"
+								style="background-image: url('/resource/front/images/services/macbook.png')">
+								<div class="flip-card-inner">
+									<div class="card bg-transparent border-0">
+										<div class="card-body">
+											<h3 class="card-title mb-0">Trekking</h3>
+											<span class="fst-italic">Chiang Mai</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flip-card-back bg-danger no-after">
+								<div class="flip-card-inner">
+									<p class="mb-2 text-white">Lorem ipsum, dolor sit amet
+										consectetur adipisicing elit. Alias cum repellat velit.</p>
+									<button type="button" class="btn btn-outline-light mt-2">View
+										Details</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="flip-card">
+							<div class="flip-card-front dark"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<div class="card bg-transparent border-0">
+										<div class="card-body">
+											<h3 class="card-title mb-0">Flexible Workspace</h3>
+											<span class="fst-italic">Bali, Indonesia</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flip-card-back"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<p class="mb-2 text-white">Lorem ipsum, dolor sit amet
+										consectetur adipisicing elit. Alias cum repellat velit.</p>
+									<button type="button" class="btn btn-outline-light mt-2">View
+										Details</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="flip-card">
+							<div class="flip-card-front dark"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<div class="card bg-transparent border-0">
+										<div class="card-body">
+											<h3 class="card-title mb-0">Wedding</h3>
+											<span class="fst-italic">London</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flip-card-back"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<p class="mb-2 text-white">Lorem ipsum, dolor sit amet
+										consectetur adipisicing elit. Alias cum repellat velit.</p>
+									<button type="button" class="btn btn-outline-light mt-2">View
+										Details</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="flip-card">
+							<div class="flip-card-front dark"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<div class="card bg-transparent border-0">
+										<div class="card-body">
+											<h3 class="card-title mb-0">Beautiful Nature</h3>
+											<span class="fst-italic">New Zealand</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flip-card-back"
+								style="background-image: url('/resource/front/images/services/macbook.png');">
+								<div class="flip-card-inner">
+									<p class="mb-2 text-white">Lorem ipsum, dolor sit amet
+										consectetur adipisicing elit. Alias cum repellat velit.</p>
+									<button type="button" class="btn btn-outline-light mt-2">View
+										Details</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row col-mb-50 mt-5">
+						<div class="fancy-title title-bottom-border">
+							<h3>어트렉션의 장점</h3>
+						</div>
+						<div class="col-12">
+							<div id="side-navigation" class="row col-mb-50"
+								data-plugin="tabs">
+								<div class="col-md-6 col-lg-4">
+									<ul class="sidenav">
+										<li class="ui-tabs-active"><a href="#snav-content1"><i
+												class="icon-screen"></i>Responsive Layout<i
+												class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content2"><i class="icon-magic"></i>Retina
+												Ready Display<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content3"><i class="icon-star3"></i>Fast
+												Performance<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content4"><i class="icon-gift"></i>Bootstrap
+												3.2 Compatible<i class="icon-chevron-right"></i></a></li>
+										<li><a href="#snav-content5"><i class="icon-adjust"></i>Light
+												&amp; Dark Scheme<i class="icon-chevron-right"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 col-lg-8">
+									<div id="snav-content1">
+										<div class="heading-block">
+											<h3>Flexible Responsive Layout</h3>
+											<span>We support multiple Devices &amp; Layouts.</span>
+										</div>
+										<div class="fslider alignleft" data-arrows="false"
+											style="width: 250px;">
+											<div class="flexslider">
+												<div class="slider-wrap">
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/1.jpg"
+															alt="Slider 1">
+													</div>
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/7.jpg"
+															alt="Slider 2">
+													</div>
+													<div class="slide">
+														<img src="/resource/front/images/portfolio/4/10.jpg"
+															alt="Slider 3">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Amet, repellendus, quibusdam minima fugiat unde ex
+											cumque velit quod culpa itaque architecto dolorem quis
+											corporis iste recusandae. Dolorum, at, aspernatur, ut,
+											molestias eum natus deserunt id tempora et unde atque dolorem
+											modi sed laudantium eius reiciendis ratione perspiciatis
+											fugit iure illo.</p>
+
+										<p class="mb-0">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit. Quam, quaerat, sequi, architecto
+											consequuntur quae placeat expedita facilis reprehenderit
+											facere accusamus asperiores nam odit neque excepturi aut a
+											dolor quisquam reiciendis dignissimos at molestiae tenetur
+											fugit fuga. Vitae, numquam, assumenda cupiditate sint quam
+											asperiores quae aut nemo ipsa ut mollitia rem necessitatibus
+											officiis eveniet cum deleniti dolorum nostrum odio laudantium
+											inventore autem dolore amet enim magni vel? Vero voluptas
+											maxime dolore.</p>
+									</div>
+
+									<div id="snav-content2">
+										<div class="heading-block">
+											<h3>Brilliant Retina Display</h3>
+											<span>Crisp &amp; Clear Graphics across all your
+												Retina &amp; Standard Devices.</span>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Omnis praesentium quaerat blanditiis incidunt corporis,
+											odit placeat dolorum. Voluptate laborum facere reprehenderit
+											dolores repudiandae voluptatibus earum quod dignissimos odit!
+											Aperiam optio delectus dolorum, fugit praesentium aut
+											voluptate autem, sapiente labore architecto magni cumque
+											magnam nobis, error accusamus soluta. Facilis, architecto,
+											eos!</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Rerum consequuntur quaerat vero qui ipsum sunt velit
+											vel, officia, nihil amet ullam. Omnis nam rerum, harum!</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Minima perspiciatis cumque, ipsa laudantium totam
+											blanditiis, expedita ut odit, cupiditate rem facilis ea ab,
+											hic amet numquam nulla possimus consectetur ipsum fuga! Atque
+											quibusdam, id eius illum numquam porro architecto accusamus
+											nam adipisci mollitia excepturi dolores non, maiores sit fuga
+											vero cumque ullam. Vitae quidem totam similique tempore
+											eligendi necessitatibus culpa.</p>
+									</div>
+
+									<div id="snav-content3">
+										<div class="heading-block">
+											<h3>Powerful &amp; Optimized Code</h3>
+											<span>Smart Reusable code all throughout the Template
+												for Infinite Customizations.</span>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Sit perferendis quisquam quod eius illo possimus id
+											maiores consequatur accusamus commodi?</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Nulla, optio animi adipisci distinctio fuga, nihil
+											perferendis dignissimos. Aperiam odio voluptatem dignissimos
+											aliquam? Ea, nihil animi, recusandae quos nulla, suscipit
+											magni provident nesciunt incidunt quo dicta asperiores iste.
+											Illo, qui culpa. Reprehenderit in asperiores blanditiis
+											pariatur aliquid iusto. Quisquam voluptatibus nostrum
+											architecto repudiandae voluptate, ipsum quae iure! Commodi
+											recusandae, repellendus voluptas fugiat aspernatur culpa quod
+											delectus quidem consequatur odio assumenda saepe inventore
+											molestiae ea expedita hic dolorum distinctio ut! Maiores,
+											error.</p>
+									</div>
+
+									<div id="snav-content4">
+										<div class="heading-block">
+											<h3>Bootstrap Compatible</h3>
+											<span>Use the amazing features of the Bootstrap
+												Framework.</span>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Nam facilis reiciendis maxime minus, iusto molestiae
+											dolor veritatis officia cumque a sit, ducimus iste beatae eos
+											harum fugit. Fuga et, iste sequi ea quibusdam doloremque
+											delectus. Ducimus delectus incidunt, deleniti assumenda
+											dignissimos magni, quo laboriosam architecto dolorum, facere
+											cum tempore, totam.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Cum esse odio, voluptatem, fuga dolore labore.
+											Voluptate, tenetur. Ab temporibus sed adipisci dolor ipsa
+											cumque iusto maiores dolorum molestias magni expedita
+											pariatur modi facere cupiditate eius quas, officiis eligendi
+											cum veritatis dolore autem? Inventore vero doloremque sunt,
+											et modi eos placeat.</p>
+									</div>
+
+									<div id="snav-content5">
+										<div class="heading-block">
+											<h3>Light &amp; Dark Schemes</h3>
+											<span>Use the dual tone schemes or mix them according
+												to your needs.</span>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Praesentium voluptas eveniet, recusandae ducimus
+											commodi, maiores voluptatem consequuntur autem quod id
+											molestiae quam nulla minus aliquam nobis laboriosam nisi ut
+											aut adipisci esse omnis at. Voluptatem, natus distinctio
+											minus possimus, aliquid magnam ratione. Adipisci odit nemo
+											voluptatum quas animi, amet et fuga quisquam possimus, dolore
+											id sint eum consequuntur, magnam aliquid impedit doloremque
+											voluptates, ducimus laboriosam. Sint quisquam molestias
+											libero voluptatum.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Consequatur nisi nemo et esse. Fugiat facere harum,
+											error iusto assumenda illo debitis quas, fugit similique
+											minima.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+			</div>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footerNav"></th:block>
+	</div>
+
+	<th:block th:replace="/fragments/front/common :: script"></th:block>
+	<script>
+		jQuery(document).ready(
+				function($) {
+					var $faqItems = $('#faqs .faq');
+					if (window.location.hash != '') {
+						var getFaqFilterHash = window.location.hash;
+						var hashFaqFilter = getFaqFilterHash.split('#');
+						if ($faqItems.hasClass(hashFaqFilter[1])) {
+							$('.grid-filter li').removeClass('activeFilter');
+							$('[data-filter=".' + hashFaqFilter[1] + '"]')
+									.parent('li').addClass('activeFilter');
+							var hashFaqSelector = '.' + hashFaqFilter[1];
+							$faqItems.css('display', 'none');
+							if (hashFaqSelector != 'all') {
+								$(hashFaqSelector).fadeIn(500);
+							} else {
+								$faqItems.fadeIn(500);
+							}
+						}
+					}
+
+					$('.grid-filter a').on('click', function() {
+						$('.grid-filter li').removeClass('activeFilter');
+						$(this).parent('li').addClass('activeFilter');
+						var faqSelector = $(this).attr('data-filter');
+						$faqItems.css('display', 'none');
+						if (faqSelector != 'all') {
+							$(faqSelector).fadeIn(500);
+						} else {
+							$faqItems.fadeIn(500);
+						}
+						return false;
+					});
+				});
+	</script>
+</body>
+
+</html>

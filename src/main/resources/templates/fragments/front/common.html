@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="headerSrc(title)">
+
+<title th:text="${title}"></title>
+<!-- Primary Meta Tags -->
+<meta name="title" content="SNS마케팅의 모든것, 어트렉션">
+<meta name="description" content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta name="keywords" content="어트렉션, ATTRACTON, SNS광고, SNS마케팅, SNS홍보, 인스타그램광고, 인스타광고, 인스타그램마케팅, 인스타마케팅, 인스타그램홍보, 인스타홍보, 한국인팔로워늘리기, 인스타팔로워늘리기, 팔로워늘리기, 인플루언서">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="ATTRACTION" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atrt.co.kr/">
+<meta property="og:title" content="SNS마케팅의 모든것, 어트렉션">
+<meta property="og:description" content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta property="og:image" content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://atrt.co.kr/">
+<meta property="twitter:title" content="SNS마케팅의 모든것, 어트렉션">
+<meta property="twitter:description" content="SNS마케팅은 노출과 컨텐츠가 중요합니다. 컨텐츠제작부터 노출작업까지 원스탑 마케팅이 가능한 어트렉션입니다.">
+<meta property="twitter:image" content="https://atrt.co.kr/resource/front/images/attr_opengraph.jpeg">
+
+<!-- Verification Codes -->
+<meta name="google-site-verification" content="Ye5iuEqYs3nHh2BNqlJixL8yJukpThrmXWl2LutBPt4" />
+<meta name="naver-site-verification" content="bf9d69aba60353e4107c0623339273151c987c5b" />
+<meta name="facebook-domain-verification" content="q9dhjo616mxkptm6b4cqbvasqnb92g" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://atrt.co.kr/" />
+<link rel="shortcut icon" href="/resource/front/image/logo.ico">
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/bootstrap.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/style.css" type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/swiper.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/dark.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/font-icons.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/animate.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/magnific-popup.css"
+	type="text/css" />
+<link rel="stylesheet" href="/resource/front/css/custom.css"
+	type="text/css" />
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-N8R2N96');</script>
+
+<!-- End Google Tag Manager -->
+
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "어트렉션",
+  "url": "https://atrt.co.kr/",
+  "logo": "https://atrt.co.kr/resource/front/images/logo-attr02.png",
+  "alternateName": "ATTRACTION",
+  "sameAs": [
+    "https://www.instagram.com/coolsta_marketing",
+    "https://blog.naver.com/dadamlabs"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "1833-5180",
+      "contactType": "customer service",
+      "email": "contact@atrt.co.kr",
+      "areaServed": [
+        "JP",
+        "KR"
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(w,d,s,l,i){
+	w[l]=w[l]||[];w[l].push({
+		'gtm.start': new Date().getTime(),
+		event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),
+dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WX9WKS6');
+</script>
+
+<script src="https://kit.fontawesome.com/e5334cc6a1.js" crossorigin="anonymous"></script>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '581433810023471');
+fbq('track', 'PageView');
+</script>
+
+<!-- End Meta Pixel Code -->
+
+
+</head>
+
+<body class="stretched">
+	<th:block th:fragment="gaScript">
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8R2N96"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+	<noscript><img height="0" width="0" style="display:none; visibility:hidden;"
+	src="https://www.facebook.com/tr?id=581433810023471&ev=PageView&noscript=1"
+	/></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WX9WKS6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	</th:block>
+	<div id="wrapper" class="clearfix">
+		<th:block th:fragment="headNav">
+			
+			<header id="header" class="full-header" data-sticky-logo-height="74"
+				data-menu-padding="32">
+				<div id="header-wrap">
+					<div class="container">
+						<div class="header-row">
+							<div id="logo">
+								<a href="/index" class="standard-logo"
+									data-dark-logo="/resource/front/images/logo-dark.png"><img
+									src="/resource/front/images/logo-attr03.png" alt="Logo"></a>
+								<a href="/index" class="retina-logo"
+									data-dark-logo="/resource/front/images/atlogo@2x.png"><img
+									src="/resource/front/images/atlogo@2x.png" alt="Logo"></a>
+							</div>
+							<div class="header-misc">
+								<div id="top-search" class="header-misc-icon">
+									<a href="#" id="top-search-trigger"><i
+										class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+								</div>
+							</div>
+							<div id="primary-menu-trigger">
+								<svg class="svg-trigger" viewBox="0 0 100 100">
+	                                <path
+										d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+	                                </path>
+	                                <path d="m 30,50 h 40"></path>
+	                                <path
+										d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+	                                </path>
+	                            </svg>
+							</div>
+							<nav class="primary-menu sub-title">
+								<ul class="menu-container">
+									<li class="menu-item"><a class="menu-link"
+										href="#">
+											<div>인스타그램 마케팅</div> <span>Instagram Marketing</span>
+									</a>
+										<ul class="sub-menu-container">
+											<li class="menu-item"><a class="menu-link"
+												href="/aboutInsta">
+													<div>
+														<i class="icon-line-columns"></i>인스타 마케팅이란?
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/productInsta">
+													<div>
+														<i class="icon-line-columns"></i>상품소개
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/portInsta">
+													<div>
+														<i class="icon-line-columns"></i>후기 & 포트폴리오
+													</div>
+											</a></li>
+											<!-- <li class="menu-item"><a class="menu-link"
+												href="/effectInsta">
+													<div>
+														<i class="icon-line-columns"></i>많이묻는질문
+													</div>
+											</a></li> -->
+										</ul></li>
+									<li class="menu-item"><a class="menu-link"
+										href="#">
+											<div>마케팅 서비스</div> <span>Marketing Service</span>
+									</a>
+										<ul class="sub-menu-container">
+											<li class="menu-item"><a class="menu-link"
+												href="/service/searchEngineMarketing">
+													<div>
+														<i class="icon-line-columns"></i>검색엔진광고
+													</div>
+											</a> <!-- <ul class="sub-menu-container">
+													<li class="menu-item"><a class="menu-link"
+														href="/service/keywordMarketing">
+															<div>
+																<i class="icon-line-columns"></i>키워드검색광고
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link"
+														href="/service/shoppingMarketing">
+															<div>
+																<i class="icon-line-columns"></i>쇼핑광고
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link"
+														href="/service/displayMarketing">
+															<div>
+																<i class="icon-line-columns"></i>디스플레이광고
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link"
+														href="/service/placeMarketing">
+															<div>
+																<i class="icon-line-columns"></i>플레이스광고
+															</div>
+													</a></li>
+												</ul> --></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/service/snsMarketing">
+													<div>
+														<i class="icon-line-columns"></i>SNS마케팅
+													</div>
+											</a> <!-- <ul class="sub-menu-container">
+													<li class="menu-item"><a class="menu-link" href="#">
+															<div>
+																<i class="icon-line-columns"></i>인스타그램
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link" href="#">
+															<div>
+																<i class="icon-line-columns"></i>페이스북
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link" href="#">
+															<div>
+																<i class="icon-line-columns"></i>인플루언서
+															</div>
+													</a></li>
+													<li class="menu-item"><a class="menu-link" href="#">
+															<div>
+																<i class="icon-line-columns"></i>유튜브
+															</div>
+													</a></li>
+												</ul> --></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/service/mediaMarketing">
+													<div>
+														<i class="icon-line-columns"></i>언론 홍보
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/service/viralMarketing">
+													<div>
+														<i class="icon-line-columns"></i>제품/방문 체험단-리뷰
+													</div>
+											</a></li>
+										</ul></li>
+									<li class="menu-item"><a class="menu-link"
+										href="#">
+											<div>브랜드 마케팅</div> <span>Brand Marketing</span>
+									</a>
+										<ul class="sub-menu-container">
+											<li class="menu-item"><a class="menu-link"
+												href="/brand/wadiz">
+													<div>
+														<i class="icon-line-columns"></i>와디즈펀딩
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/brand/openmarket">
+													<div>
+														<i class="icon-line-columns"></i>오픈마켓
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/brand/design">
+													<div>
+														<i class="icon-line-columns"></i>CI/디자인
+													</div>
+											</a></li>
+										</ul></li>
+									<li class="menu-item"><a class="menu-link"
+										href="/hospital">
+											<div>병/의원 마케팅</div> <span>Hospital Marketing</span>
+										</a>
+									</li>	
+									<li class="menu-item"><a class="menu-link"
+										href="#">
+											<div>소프트웨어 개발</div> <span>Programming</span>
+									</a>
+										<ul class="sub-menu-container">
+											<li class="menu-item"><a class="menu-link"
+												href="/software/website">
+													<div>
+														<i class="icon-line-columns"></i>웹사이트 개발
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/software/html5game">
+													<div>
+														<i class="icon-line-columns"></i>HTML5 게임개발
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/software/program">
+													<div>
+														<i class="icon-line-columns"></i>프로그램 개발
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/software/maintenance">
+													<div>
+														<i class="icon-line-columns"></i>웹사이트 유지 및 보수
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/software/arfilter">
+													<div>
+														<i class="icon-line-columns"></i>인스타그램 AR필터 제작
+													</div>
+											</a></li>
+										</ul></li>
+									<li class="menu-item"><a class="menu-link"
+										href="#">
+											<div>광고주 센터</div> <span>Clients Community</span>
+									</a>
+										<ul class="sub-menu-container">
+											
+											<li class="menu-item">
+												<a class="menu-link" href="/community/inquiry">
+													<div>
+														<i class="icon-line-columns"></i>문의하기
+													</div>
+												</a>
+											</li>
+											
+											<li class="menu-item"><a class="menu-link"
+												href="/community/faq">
+													<div>
+														<i class="icon-line-columns"></i>자주묻는질문
+													</div>
+											</a></li>
+											<!-- <li class="menu-item"><a class="menu-link"
+												href="/community/notice">
+													<div>
+														<i class="icon-line-columns"></i>마케팅꿀팁
+													</div>
+											</a></li>
+											<li class="menu-item"><a class="menu-link"
+												href="/community/about">
+													<div>
+														<i class="icon-line-columns"></i>제안서받기
+													</div>
+											</a></li>  -->
+											<!-- 
+											<li class="menu-item"><a class="menu-link"
+												href="/community/event">
+													<div>
+														<i class="icon-line-columns"></i>이벤트
+													</div>
+											</a></li>
+											
+											-->
+											<!-- <li class="menu-item"><a class="menu-link"
+												href="/community/about">
+													<div>
+														<i class="icon-line-columns"></i>회사소개서
+													</div>
+											</a></li> -->
+										</ul>
+									</li>
+								</ul>
+							</nav>
+							<form class="top-search-form" action="#" method="get">
+								<input type="text" name="q" class="form-control" value=""
+									placeholder="검색어를 입력 해 주세요" autocomplete="off">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="header-wrap-clone"></div>
+			</header>
+		</th:block>
+
+
+		<th:block th:fragment="iconsBox">
+			<div class="iconsbox">
+				더 많은 서비스가 궁금하다면?
+				<div class="icons">
+					<a href="/productInsta"><img
+						src="/resource/front/image/icon/icon-i.png"></a> <a
+						href="/service/viralMarketing"><img
+						src="/resource/front/image/icon/icon-in.png"></a> <a
+						href="/service/searchEngineMarketing"><img
+						src="/resource/front/image/icon/icon-n.png"></a> <a
+						href="/brand/wadiz"><img
+						src="/resource/front/image/icon/icon-w.png"></a> <a
+						href="/brand/design"><img
+						src="/resource/front/image/icon/icon-br.png"></a>
+				</div>
+			</div>
+		</th:block>
+
+
+		<th:block th:fragment="footerNav">
+			<footer id="footer" class="dark">
+				<div id="copyrights">
+					<div class="container">
+
+						<div class="row col-mb-30">
+
+							<div class="col-md-6 text-center text-md-start">
+								Copyrights &copy; 2022 All Rights Reserved by 어트렉션<br>
+								
+								<div class="copyright-links">
+									<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+								</div>
+								
+							</div>
+
+							<div class="col-md-6 text-center text-md-end">
+								<div
+									class="d-flex justify-content-center justify-content-md-end">
+									<!-- <a href="#"
+										class="social-icon si-small si-borderless si-facebook"> <i
+										class="icon-facebook"></i> <i class="icon-facebook"></i>
+									</a> <a href="#"
+										class="social-icon si-small si-borderless si-twitter"> <i
+										class="icon-twitter"></i> <i class="icon-twitter"></i>
+									</a> <a href="#"
+										class="social-icon si-small si-borderless si-gplus"> <i
+										class="icon-gplus"></i> <i class="icon-gplus"></i>
+									</a> <a href="#"
+										class="social-icon si-small si-borderless si-linkedin"> <i
+										class="icon-linkedin"></i> <i class="icon-linkedin"></i>
+									</a> -->
+								</div>
+
+								<div class="clear"></div>
+								<i class="icon-envelope2"></i> contact@atrt.co.kr <span
+									class="middot">&middot;</span> <i class="icon-headphones"></i>
+								1833-5180 <span class="middot">&middot;</span> <i
+									class="icon-skype2"></i> ATtraction<br>
+								<div>
+									<span class="middot">&middot;</span> 서울오피스 : 서울시 강남구 강남대로 310, 유니온센터
+								</div>
+								<div>
+									<span class="middot">&middot;</span> 도쿄오피스 :  東京都新宿区西新宿３－３－１３ 西新宿水間ビル６階
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- <div class="modal fade" id="contactFormModal" tabindex="-1"
+				role="dialog" aria-labelledby="contactFormModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="contactFormModalLabel">Send Us
+								an Email</h4>
+							<button type="button" class="btn-close btn-sm"
+								data-bs-dismiss="modal" aria-hidden="true"></button>
+						</div>
+						<div class="modal-body">
+
+							<div class="form-widget">
+								<div class="form-result"></div>
+								<form class="mb-0" id="template-contactform"
+									name="template-contactform" action="#"
+									method="post">
+
+									<div class="form-process">
+										<div class="css3-spinner">
+											<div class="css3-spinner-scaler"></div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-6 form-group">
+											<label for="template-contactform-name">Name <small>*</small></label>
+											<input type="text" id="template-contactform-name"
+												name="template-contactform-name" value=""
+												class="sm-form-control required" />
+										</div>
+
+										<div class="col-sm-6 form-group">
+											<label for="template-contactform-email">Email <small>*</small></label>
+											<input type="email" id="template-contactform-email"
+												name="template-contactform-email" value=""
+												class="required email sm-form-control" />
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-sm-6 form-group">
+											<label for="template-contactform-phone">Phone</label> <input
+												type="text" id="template-contactform-phone"
+												name="template-contactform-phone" value=""
+												class="sm-form-control" />
+										</div>
+
+										<div class="col-sm-6 form-group">
+											<label for="template-contactform-service">Services</label> <select
+												id="template-contactform-service"
+												name="template-contactform-service" class="sm-form-control">
+												<option value="">-- Select One --</option>
+												<option value="Wordpress">Wordpress</option>
+												<option value="PHP / MySQL">PHP / MySQL</option>
+												<option value="HTML5 / CSS3">HTML5 / CSS3</option>
+												<option value="Graphic Design">Graphic Design</option>
+											</select>
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-12 form-group">
+											<label for="template-contactform-subject">Subject <small>*</small></label>
+											<input type="text" id="template-contactform-subject"
+												name="subject" value="" class="required sm-form-control" />
+										</div>
+
+										<div class="col-12 form-group">
+											<label for="template-contactform-message">Message <small>*</small></label>
+											<textarea class="required sm-form-control"
+												id="template-contactform-message"
+												name="template-contactform-message" rows="6" cols="30"></textarea>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="template-contactform-botcheck"
+												name="template-contactform-botcheck" value=""
+												class="sm-form-control" />
+										</div>
+
+										<div class="col-12 form-group">
+											<button class="button button-3d m-0" type="submit"
+												id="template-contactform-submit"
+												name="template-contactform-submit" value="submit">Send
+												Message</button>
+										</div>
+									</div>
+									<input type="hidden" name="prefix"
+										value="template-contactform-">
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+ -->
+			<!-- <div class="modal1 mfp-hide subscribe-widget" id="myModal1">
+				<div class="block dark mx-auto" data-height-xl="700">
+					<div class="container">
+						<div style="padding: 50px;">
+							<div id="oc-events"
+								class="owl-carousel events-carousel carousel-widget"
+								data-pagi="true" data-items-md="1" data-items-lg="2"
+								data-items-xl="2">
+
+								<div class="oc-item">
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="oc-item">
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="oc-item">
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="oc-item">
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="entry event mb-0">
+										<div class="grid-inner row align-items-center g-0 p-4">
+											<div class="col-md-5 mb-md-0">
+												<a href="#" class="entry-image"> <img
+													src="/resource/front/images/events/thumbs/3.jpg" alt="#">
+												</a>
+											</div>
+											<div class="col-md-7 ps-md-4">
+												<div class="entry-title title-xs">
+													<h3>
+														<a href="#">웹사이트 개발</a>
+													</h3>
+												</div>
+												<div class="entry-meta">
+													<ul>
+														<li><a href="#"><i class="icon-calendar-alt"></i>2022.01.01</a></li>
+														<li><a href="#"><i class="icon-clipboard-list"></i>
+																영업용 홈페이지 제작해 드렸습니다</a></li>
+													</ul>
+												</div>
+												<div class="entry-content">
+													<a href="#" class="btn btn-secondary btn-sm">문의하기</a> <a
+														href="#" class="btn btn-danger btn-sm">더보기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div style="font-family: gm;">
+				<a id="contactBtn" href="/community/inquiry"
+					class="button button-rounded button-reveal button-large button-atrtblue linkBtn">
+					<i class="icon-question i-alt btnIcon"></i> <span class="iconText">신속문의하기</span>
+				</a>
+				<a id="telBtn" href="tel:1833-5180"
+					class="button button-rounded button-reveal button-large button-black linkBtn">
+					<i class="icon-line-phone-call btnIcon"></i> <span class="iconText">빠른전화상담</span>
+				</a>
+				<a id="kakaoBtn" href="http://pf.kakao.com/_sQyxkxb/chat"
+					class="button button-rounded button-reveal button-large button-kakao button-light linkBtn">
+					<i class="icon-line-message-circle i-alt btnIcon"></i> <span
+					class="iconText">카카오톡상담</span>
+				</a>
+				<!-- <a id="recentBtn" href="#myModal1" data-lightbox="inline"
+					class="button button-rounded button-reveal button-large button-grey linkBtn">
+					<i class="icon-search3 i-alt btnIcon"></i> <span class="iconText">최근후기보기</span>
+				</a> -->
+			</div> 
+			<div id="gotoTop" class="icon-angle-up"></div>
+		</th:block>
+	</div>
+
+	<th:block th:fragment="script">
+		<script src="/resource/front/js/jquery.js"></script>
+		<script src="/resource/front/js/plugins.min.js"></script>
+		<script src="/resource/front/js/functions.js"></script>
+		<script>
+			$(function() {
+				if (window.innerWidth < 760) {
+					$('#modalGal').addClass('grid-2');
+				} else {
+					$('#modalGal').addClass('grid-4');
+				}
+			});
+		</script>
+		<script>
+		  (function() {
+		    var w = window;
+		    if (w.ChannelIO) {
+		      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		    }
+		    var ch = function() {
+		      ch.c(arguments);
+		    };
+		    ch.q = [];
+		    ch.c = function(args) {
+		      ch.q.push(args);
+		    };
+		    w.ChannelIO = ch;
+		    function l() {
+		      if (w.ChannelIOInitialized) {
+		        return;
+		      }
+		      w.ChannelIOInitialized = true;
+		      var s = document.createElement('script');
+		      s.type = 'text/javascript';
+		      s.async = true;
+		      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		      s.charset = 'UTF-8';
+		      var x = document.getElementsByTagName('script')[0];
+		      x.parentNode.insertBefore(s, x);
+		    }
+		    if (document.readyState === 'complete') {
+		      l();
+		    } else if (window.attachEvent) {
+		      window.attachEvent('onload', l);
+		    } else {
+		      window.addEventListener('DOMContentLoaded', l, false);
+		      window.addEventListener('load', l, false);
+		    }
+		  })();
+		  ChannelIO('boot', {
+		    "pluginKey": "762fa2fe-fb5d-414b-b749-13c1a4d7d6b7"
+		  });
+		</script>
+	</th:block>
+</body>
+
+</html>
