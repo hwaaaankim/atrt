@@ -7,10 +7,24 @@ logging:
           descriptor:
             sql:
               BasicBinder: TRACE
+app:
+  publicBaseUrl: "https://atrt.co.kr"
               
 spring:
   profiles:
-    active: test     
+    active: prod    
+  mail:
+    host: smtp.gmail.com # 1
+    port: 587 # 2
+    username: 'admin@qlixjp.com' # 3
+    password: 'egmzqzmrfgsvqpdu' # 4
+    properties:
+      mail:
+        smtp:
+          auth: true # 5
+          timeout: 5000 # 6
+          starttls:
+            enable: true # 7    
 server:
   tomcat:
     use-relative-redirects: true
@@ -22,9 +36,9 @@ spring:
       on-profile: test
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    password: ghksrka3849!
-    url: jdbc:mariadb://localhost:3306/attraction
-    username: root
+    password: ghksrka9274!
+    url: jdbc:mariadb://183.111.242.56:3306/teriwoo87
+    username: teriwoo87
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MariaDB103Dialect
@@ -32,6 +46,8 @@ spring:
     multipart:
       maxFileSize: 50MB
       maxRequestSize: -1
+  upload:
+    path: "D:/attraction/"    
 
 ---        
 spring:
@@ -49,4 +65,6 @@ spring:
   servlet:
     multipart:
       maxFileSize: 50MB
-      maxRequestSize: -1      
+      maxRequestSize: -1    
+  upload:
+    path: "/home/hosting_users/teriwoo87/tomcat/webapps/upload/"      

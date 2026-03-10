@@ -1,0 +1,130 @@
+/* =========================
+   Wrapper
+   ========================= */
+.email-manager-wrap {}
+
+/* =========================
+   Excel Upload UI
+   ========================= */
+.email-manager-upload-row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch; /* 버튼/인풋 높이 동일 */
+    width: 100%;
+}
+
+.email-manager-excel-file-hidden {
+    display: none !important;
+}
+
+.email-manager-excel-filename {
+    flex: 1 1 auto;
+    height: 46px;
+    padding: 0 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center; /* placeholder/파일명 중앙 */
+}
+
+.email-manager-excel-pick-btn,
+.email-manager-excel-upload-btn {
+    height: 46px;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 16px;
+}
+
+.email-manager-excel-pick-btn {
+    min-width: 120px;
+}
+
+.email-manager-excel-upload-btn {
+    min-width: 150px;
+}
+
+/* 모바일에서는 세로로 자연스럽게 */
+@media (max-width: 576px) {
+    .email-manager-upload-row {
+        flex-direction: column;
+    }
+    .email-manager-excel-pick-btn,
+    .email-manager-excel-upload-btn {
+        width: 100%;
+    }
+}
+
+/* =========================
+   Recipient Cards
+   ========================= */
+.email-manager-recipient-card {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 14px 14px 12px 14px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.email-manager-recipient-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.email-manager-recipient-email {
+    font-weight: 700;
+    word-break: break-all;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.email-manager-recipient-meta {
+    margin-top: 8px;
+    color: rgba(0,0,0,0.55);
+    font-size: 12px;
+}
+
+/* 삭제(X) 버튼 */
+.email-manager-recipient-delete-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+    flex: 0 0 auto;
+}
+
+.email-manager-recipient-delete-btn:hover {
+    background: rgba(220, 53, 69, 0.08); /* bootstrap danger 느낌 */
+    border-color: rgba(220, 53, 69, 0.25);
+}
+
+.email-manager-recipient-delete-icon {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    color: rgba(220, 53, 69, 0.9);
+}
+
+/* =========================
+   Editor Height (CKEditor)
+   ========================= */
+#email-manager-editor {
+    min-height: 500px;
+}
+
+/* CKEditor 실제 편집 영역 높이 강제 */
+.ck-editor__editable_inline {
+    min-height: 500px;
+}
+#email-manager-scroll-sentinel {
+    margin-bottom: 80px;
+}

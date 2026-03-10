@@ -147,4 +147,10 @@ public class AdminController {
 
 		return sb.toString();
 	}
+	
+	@GetMapping("/emailManager")
+    public String emailManager() {
+        // ✅ 요청: /admin/email/emailManager view 반환
+        return "admin/email/emailManager";
+    }
 }

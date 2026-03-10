@@ -30,10 +30,14 @@
 		<ul class="sidebar-menu" id="nav-accordion">
 			<h5 class="centered" th:text="${name}">직원이름</h5>
 			<li class="mt"><a th:href="@{/admin/clientManager}"> <i
-					class="fa fa-dashboard"></i> <span>일반 문의 관리</span>
+					class="fa fa-dashboard"></i> <span>일반문의관리</span>
 			</a></li>
+			
 			<li><a th:href="@{/admin/japanClientManager}"> <i
-					class="fa fa-dashboard"></i> <span>일본 문의 관리</span>
+					class="fa fa-dashboard"></i> <span>일본문의관리</span>
+			</a></li>
+			<li><a th:href="@{/admin/emailManager}"> <i
+					class="fa fa-dashboard"></i> <span>이메일발송관리</span>
 			</a></li>
 		</ul>
 	</div>

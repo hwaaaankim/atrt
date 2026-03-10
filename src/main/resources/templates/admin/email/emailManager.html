@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Email Manager</title>
+
+	<link th:href="@{/resource/admin/assets/lib/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+	<link th:href="@{/resource/admin/email/emailManager.css}" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid mt-4 email-manager-wrap">
+
+		<!-- 1) Excel 업로드 -->
+		<div class="card mb-3">
+			<div class="card-body">
+				<h5 class="mb-3">이메일 엑셀 업로드</h5>
+
+				<div class="email-manager-upload-row">
+					<input type="file"
+						class="email-manager-excel-file-hidden"
+						id="email-manager-excel-file"
+						accept=".xlsx,.xls" />
+
+					<input type="text"
+						class="form-control email-manager-excel-filename"
+						id="email-manager-excel-filename"
+						placeholder="엑셀 파일을 선택하세요 (.xlsx, .xls)"
+						readonly />
+
+					<button type="button"
+						class="btn btn-outline-secondary email-manager-excel-pick-btn"
+						id="email-manager-excel-pick-btn">
+						파일 선택
+					</button>
+
+					<button type="button"
+						class="btn btn-primary email-manager-excel-upload-btn"
+						id="email-manager-excel-upload-btn">
+						업로드 및 저장
+					</button>
+				</div>
+
+				<small class="text-muted d-block mt-2">
+					- 1열(A컬럼)에 이메일만 입력 (헤더 없음)<br />
+					- 중복 이메일은 자동으로 저장되지 않습니다.
+				</small>
+
+				<div class="mt-3">
+					<span class="badge bg-secondary" id="email-manager-excel-result">대기</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 2) HTML Editor -->
+		<div class="card mb-3">
+			<div class="card-body">
+				<h5 class="mb-3">이메일 HTML 컨텐츠</h5>
+
+				<div class="row g-2 mb-2 align-items-stretch">
+					<div class="col-md-6">
+						<input type="text"
+							class="form-control email-manager-subject-input"
+							id="email-manager-subject"
+							placeholder="메일 제목을 입력하세요" />
+					</div>
+
+					<div class="col-md-2">
+						<button type="button"
+							class="btn btn-success w-100 email-manager-template-save-btn"
+							id="email-manager-template-save-btn">
+							저장
+						</button>
+					</div>
+
+					<div class="col-md-2">
+						<button type="button"
+							class="btn btn-primary w-100 email-manager-template-send-btn"
+							id="email-manager-template-send-btn">
+							수동발송
+						</button>
+					</div>
+
+					<div class="col-md-2">
+						<button type="button"
+							class="btn btn-outline-primary w-100 email-manager-template-test-btn"
+							id="email-manager-template-test-btn">
+							테스트발송
+						</button>
+					</div>
+				</div>
+
+				<span class="text-muted" id="email-manager-template-status"></span>
+
+				<textarea id="email-manager-editor" class="form-control" rows="12"></textarea>
+			</div>
+		</div>
+
+		<!-- 3) Recipient 리스트 -->
+		<div class="card">
+			<div class="card-body">
+				<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-3">
+					<div>
+						<h5 class="mb-2">저장된 이메일 목록</h5>
+
+						<div class="d-flex flex-wrap gap-2">
+							<button type="button"
+								class="btn btn-outline-secondary btn-sm"
+								id="email-manager-select-all-btn">
+								전체선택
+							</button>
+
+							<button type="button"
+								class="btn btn-outline-secondary btn-sm"
+								id="email-manager-clear-selection-btn">
+								전체선택해제
+							</button>
+
+							<button type="button"
+								class="btn btn-danger btn-sm"
+								id="email-manager-bulk-delete-btn"
+								disabled>
+								삭제
+							</button>
+
+							<button type="button"
+								class="btn btn-outline-danger btn-sm"
+								id="email-manager-delete-all-btn">
+								모두삭제
+							</button>
+						</div>
+					</div>
+
+					<div class="text-md-end mt-3 mt-md-0">
+						<span class="text-muted d-block" id="email-manager-list-status">로딩 준비</span>
+						<span class="badge bg-light text-dark mt-2" id="email-manager-selected-count">선택 0건</span>
+					</div>
+				</div>
+
+				<div class="row" id="email-manager-recipient-grid"></div>
+
+				<div id="email-manager-scroll-sentinel" class="py-3 text-center text-muted">
+					스크롤하면 더 불러옵니다.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script th:src="@{/resource/admin/assets/lib/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+	<script th:src="@{/resource/admin/email/emailManager.js}"></script>
+</body>
+
+</html>
